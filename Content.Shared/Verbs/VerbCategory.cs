@@ -35,6 +35,10 @@ namespace Content.Shared.Verbs
             IconsOnly = iconsOnly;
         }
 
+        // ROBUST START
+        public static readonly VerbCategory TeamCategory =
+            new("Choose Team", "/Textures/Interface/character.svg.192dpi.png");
+        // ROBUST END
         public static readonly VerbCategory Admin =
             new("verb-categories-admin", "/Textures/Interface/character.svg.192dpi.png");
 

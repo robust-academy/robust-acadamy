@@ -1,0 +1,21 @@
+- type: matchMap
+  id: BoxVaultMap
+  mapName: "Bagel (Vault)"
+  mapPath: "Maps/_ROBUST/ArenaGrid.yml" # todo: change this yaml path
+
+- type: matchMap
+  id: OldBridgeDMMap
+  mapName: "Old Bridge DM"
+  mapPath: "Maps/_ROBUST/OldBrigeDM.yml"
+
+- type: matchMap
+  id: SkibidiMap
+  mapName: "Skibidi map"
+  mapPath: "Maps/_ROBUST/skibidPOWER.yml"
+
+- type: mapPack
+  id: DefaultMaps
+  maps:
+  - BoxVaultMap
+  - OldBridgeDMMap
+  - SkibidiMap

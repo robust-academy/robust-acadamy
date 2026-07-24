@@ -1,0 +1,14 @@
+- type: gameMap
+  id: TESTTEST
+  mapName: 'TESTTEST'
+  mapPath: _ROBUST/Maps/TESTTEST.yml
+  minPlayers: 0
+  stations:
+    TESTTEST:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'TESTTEST'
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ -1, -1 ]

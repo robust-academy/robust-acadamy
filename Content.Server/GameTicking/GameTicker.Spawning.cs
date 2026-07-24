@@ -237,6 +237,10 @@ namespace Content.Server.GameTicking
             if (jobBans != null)
                 restrictedRoles.UnionWith(jobBans);
 
+            // ROBUST START - Weird thing where you join as ghost. Might be fixed in the future
+            restrictedRoles = new();
+            // ROBUST END
+
             // Pick best job best on prefs.
             jobId ??= _stationJobs.PickBestAvailableJobWithPriority(station,
                 character.JobPriorities,

@@ -1,0 +1,134 @@
+- type: entity
+  id: BaseMatch
+  abstract: true
+  components:
+  - type: Match
+  - type: MatchMap
+    availableMaps:
+    - DefaultMaps
+
+# todo:
+# Dont allow starting another match when in a match.
+# When round start, freeze players for 5-10 seconds and make them peaceful - they can do anything besides attack and move.
+#   this is so they can equip items properly and stuff
+
+- type: entity
+  parent: BaseMatch
+  id: TestMatch
+  components:
+  - type: Round
+    maxRoundLength: 5m
+    firstToPoints: 5
+  - type: Match
+    matchPhases:
+      enum.MatchPhaseSection.Start:
+      - !type:CreateMap
+      - !type:ChooseTeams
+        teams:
+          RedTeam: 1
+          BlueTeam: 1
+      - !type:DeletePlayerBodies # todo: this has to be done AFTER choosing teams because the players body has team info
+      - !type:SetupScores
+        nextPhase: enum.MatchPhaseSection.RoundStart
+
+      enum.MatchPhaseSection.RoundStart:
+      - !type:TransferMindsToGhosts
+      - !type:Wait
+        waitTime: 1s
+      - !type:AskPlayersForKits
+        kitTables:
+          primary: !type:NestedSelector
+            tableId: PrimaryTable
+          armor: !type:NestedSelector
+            tableId: ArmorTable
+          secondary: !type:NestedSelector
+            tableId: SecondaryTable
+          healing: !type:NestedSelector
+            tableId: HealingTable
+          belt: !type:NestedSelector
+            tableId: BeltTable
+        kitsToSelect: 3
+        maximumSelectionTime: 15s
+      - !type:Wait
+        waitTime: 1s
+      - !type:SpawnPlayers
+      - !type:GiveEquipment
+      - !type:ResetKits # sometimes you might not want to reset it (e.g if you have more than one life or something.)
+      - !type:FreezePlayers
+        freezeTime: 7s
+      - !type:RoundStartGameplay
+        nextPhase: enum.MatchPhaseSection.S_EndCurrentPhase
+
+      enum.MatchPhaseSection.RoundEnd:
+      - !type:RoundEndGameplay
+      - !type:Wait
+        waitTime: 2s
+      - !type:DeleteMap
+      - !type:CreateMap
+        nextPhase: enum.MatchPhaseSection.RoundStart
+
+      enum.MatchPhaseSection.End:
+      - !type:RoundEndGameplay
+      - !type:Wait
+        waitTime: 5s
+      - !type:HideScores
+      - !type:DeleteMap
+      - !type:RespawnPlayersToLobby
+      - !type:DeleteMatch
+        nextPhase: enum.MatchPhaseSection.S_EndCurrentPhase
+
+- type: entityTable
+  id: DefaultOneVsOneEquipmentUplink
+  table: !type:AllSelector
+    children:
+    - id: ClothingUniformJumpsuitColorGrey
+    - id: ClothingShoesColorBlack
+    - id: ClothingHeadsetGrey
+    - id: ClothingBackpack
+    - id: ClothingMaskBreath
+    - id: CombatKnife
+    - id: EmergencyMedipen
+    - id: EmergencyOxygenTankFilled
+    - id: Flare
+    - id: DrinkWaterBottleFull
+    - id: Crowbar
+    - id: PassengerPDA
+    - id: BaseUplinkRadio20TC
+
+- type: entity
+  parent: PrefilledSyringe
+  id: SyringeOmnizine
+  components:
+  - type: Label
+    currentLabel: omnizine
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Omnizine
+        Quantity: 15
+
+- type: entity
+  parent: PrefilledSyringe
+  id: SyringeMeth
+  components:
+  - type: Label
+    currentLabel: meth
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Desoxyephedrine
+        Quantity: 15
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateCarpSuitPlusPlusPlus
+  name: carp suit duffel bag+++
+  description: Contains a carp suit and some friends to play with.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ClothingOuterHardsuitCarp
+        - id: DehydratedSpaceCarp
+          amount: 6

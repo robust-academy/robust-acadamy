@@ -1,6 +1,8 @@
 using System.Linq;
+using Content.Server._ROBUST.Match;
 using Content.Server.Administration;
 using Content.Server.Mind;
+using Content.Shared.Administration;
 using Content.Shared.Players;
 using Robust.Server.Player;
 using Robust.Shared.Console;
@@ -8,17 +10,34 @@ using Robust.Shared.Network;
 
 namespace Content.Server.GameTicking.Commands
 {
+    [AnyCommand] // ROBUST
     sealed partial class RespawnCommand : LocalizedEntityCommands
     {
         [Dependency] private IPlayerManager _player = default!;
         [Dependency] private IPlayerLocator _locator = default!;
         [Dependency] private GameTicker _gameTicker = default!;
         [Dependency] private MindSystem _mind = default!;
+        [Dependency] private MatchManagerSystem _match = default!; // ROBUST
 
         public override string Command => "respawn";
 
         public override async void Execute(IConsoleShell shell, string argStr, string[] args)
         {
+            // ROBUST START
+            if (args.Length != 0) // only can respawn yourself
+                return;
+
+            if (shell.Player == null)
+                return;
+
+            var match = _match.GetMatchFromPlayer(shell.Player);
+
+            if (match != null)
+            {
+                _match.DeleteMatchAndRespawnPlayers(match.Value);
+            }
+            // ROBUST END
+
             var player = shell.Player;
             if (args.Length > 1)
             {

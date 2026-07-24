@@ -1,3 +1,4 @@
+using Content.Server._ROBUST.Match;
 using Content.Server.Popups;
 using Content.Shared.Administration;
 using Content.Shared.GameTicking;
@@ -24,6 +25,13 @@ namespace Content.Server.Ghost
                 shell.WriteLine(Loc.GetString("ghost-command-no-session"));
                 return;
             }
+
+            // ROBUST START
+            if (_entities.System<MatchManagerSystem>().GetAllPlayersInMatches().Contains(player))
+            {
+                return;
+            }
+            // ROBUST END
 
             var gameTicker = _entities.System<GameTicker>();
             if (!gameTicker.PlayerGameStatuses.TryGetValue(player.UserId, out var playerStatus) ||

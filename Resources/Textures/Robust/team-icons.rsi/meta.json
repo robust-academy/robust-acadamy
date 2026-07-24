@@ -1,0 +1,26 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "robusta",
+    "size": {
+        "x": 8,
+        "y": 8
+    },
+    "states": [
+        {
+            "name": "blue"
+        },
+        {
+            "name": "green"
+        },
+        {
+            "name": "red"
+        },
+        {
+            "name": "yellow"
+        },
+        {
+            "name": "white"
+        }
+    ]
+}

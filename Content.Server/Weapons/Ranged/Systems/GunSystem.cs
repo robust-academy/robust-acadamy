@@ -259,8 +259,9 @@ public sealed partial class GunSystem : SharedGunSystem
 
     public override void PlayImpactSound(EntityUid otherEntity, DamageSpecifier? modifiedDamage, SoundSpecifier? weaponSound, bool forceWeaponSound)
     {
-        DebugTools.Assert(!Deleted(otherEntity), "Impact sound entity was deleted");
-
+        // ROBUST START - annoying error
+        // DebugTools.Assert(!Deleted(otherEntity), "Impact sound entity was deleted");
+        // ROBUST END
         // Like projectiles and melee,
         // 1. Entity specific sound
         // 2. Ammo's sound

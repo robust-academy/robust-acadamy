@@ -1,0 +1,27 @@
+<score1:ScoreBarUI xmlns="https://spacestation14.io"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+
+                  xmlns:score1="clr-namespace:Content.Client._ROBUST.Match.Score"
+                  xmlns:timer="clr-namespace:Content.Client._ROBUST.Match.Timer">
+        <PanelContainer StyleClasses="BackgroundPanel" ModulateSelfOverride="#2b2b31">
+            <BoxContainer Orientation="Vertical">
+                <BoxContainer Orientation="Horizontal" SeparationOverride="15" Margin="0 0 0 0" Align="Center">
+                    <Label Name="YourScore" Text="6" FontColorOverride="Green" Access="Public" />
+                    <Label Name="Middle" Text="to" />
+                    <Label Name="OpponentsScore" Text="7" FontColorOverride="Red" Access="Public" />
+                </BoxContainer>
+
+                <BoxContainer Align="Center">
+                    <Label Text="First to 67!" Name="Footer" Access="Public" Margin="0 0 0 2"/>
+                </BoxContainer>
+
+                <BoxContainer Align="Center" Margin="0 0 0 2">
+                    <timer:CountdownTimer Name="RoundTime" Access="Public" />
+                </BoxContainer>
+
+                <BoxContainer Align="Center" Margin="0 0 0 2">
+                    <Label Name="DebugInfo" Access="Public" />
+                </BoxContainer>
+            </BoxContainer>
+        </PanelContainer>
+</score1:ScoreBarUI>

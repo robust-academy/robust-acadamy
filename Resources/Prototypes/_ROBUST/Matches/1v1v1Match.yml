@@ -1,0 +1,65 @@
+- type: entity
+  parent: BaseMatch
+  id: OneVsOneVsOneMatch
+  components:
+  - type: Round
+    maxRoundLength: 5m
+    firstToPoints: 3
+  - type: Match
+    matchPhases:
+      enum.MatchPhaseSection.Start:
+      - !type:CreateMap
+      - !type:BringPlayerBodiesToNullSpace
+      - !type:ChooseTeams
+        teams:
+          RedTeam: 1
+          BlueTeam: 1
+          GreenTeam: 1
+      - !type:SetupScores
+        nextPhase: enum.MatchPhaseSection.RoundStart
+
+      enum.MatchPhaseSection.RoundStart:
+      - !type:TransferMindsToGhosts
+      - !type:Wait
+        waitTime: 1s
+      - !type:AskPlayersForKits
+        kitTables:
+          primary: !type:NestedSelector
+            tableId: PrimaryTable
+          armor: !type:NestedSelector
+            tableId: ArmorTable
+          secondary: !type:NestedSelector
+            tableId: SecondaryTable
+          healing: !type:NestedSelector
+            tableId: HealingTable
+          belt: !type:NestedSelector
+            tableId: BeltTable
+        kitsToSelect: 3
+        maximumSelectionTime: 15s
+      - !type:Wait
+        waitTime: 1s
+      - !type:SpawnPlayers
+      - !type:GiveEquipment
+      - !type:ResetKits # sometimes you might not want to reset it (e.g if you have more than one life or something.)
+      - !type:FreezePlayers
+        freezeTime: 7s
+      - !type:RoundStartGameplay
+        nextPhase: enum.MatchPhaseSection.S_EndCurrentPhase
+
+      enum.MatchPhaseSection.RoundEnd:
+      - !type:RoundEndGameplay
+      - !type:Wait
+        waitTime: 2s
+      - !type:DeleteMap
+      - !type:CreateMap
+        nextPhase: enum.MatchPhaseSection.RoundStart
+
+      enum.MatchPhaseSection.End:
+      - !type:RoundEndGameplay
+      - !type:Wait
+        waitTime: 5s
+      - !type:HideScores
+      - !type:DeleteMap
+      - !type:BringPlayersToLobby
+      - !type:DeleteMatch
+        nextPhase: enum.MatchPhaseSection.S_EndCurrentPhase

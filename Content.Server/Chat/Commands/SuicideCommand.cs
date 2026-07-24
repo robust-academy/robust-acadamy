@@ -8,7 +8,7 @@ using Robust.Shared.Enums;
 
 namespace Content.Server.Chat.Commands
 {
-    [AnyCommand]
+    // [AnyCommand] ROBUST
     internal sealed partial class SuicideCommand : IConsoleCommand
     {
         [Dependency] private IEntityManager _e = default!;

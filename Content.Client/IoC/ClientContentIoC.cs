@@ -1,3 +1,4 @@
+using Content.Client._ROBUST.Match.Score;
 using Content.Client.Administration.Managers;
 using Content.Client.Audio.Midi;
 using Content.Client.Changelog;
@@ -50,6 +51,7 @@ namespace Content.Client.IoC
             collection.Register<ISharedAdminManager, ClientAdminManager>();
             collection.Register<EuiManager, EuiManager>();
             collection.Register<IVoteManager, VoteManager>();
+            collection.Register<ScoreManager>(); // ROBUST
             collection.Register<ChangelogManager, ChangelogManager>();
             collection.Register<ViewportManager, ViewportManager>();
             collection.Register<ISharedAdminLogManager, SharedAdminLogManager>();

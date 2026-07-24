@@ -1,0 +1,29 @@
+- type: team
+  id: BlueTeam
+  teamName: "Blue Team"
+  teamColor: blue
+  teamIcon: BlueTeamIcon
+
+- type: team
+  id: RedTeam
+  teamName: "Red Team"
+  teamColor: red
+  teamIcon: RedTeamIcon
+
+- type: factionIcon
+  id: BlueTeamIcon
+  icon:
+    sprite: /Textures/Robust/team-icons.rsi
+    state: blue
+  isShaded: true
+  priority: 0
+  locationPreference: Right
+
+- type: factionIcon
+  id: RedTeamIcon
+  icon:
+    sprite: /Textures/Robust/team-icons.rsi
+    state: red
+  isShaded: true
+  priority: 0
+  locationPreference: Right
