@@ -1,0 +1,26 @@
+- type: entity
+  name: match spawn point
+  id: MatchSpawnPoint
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    state: green
+  - type: MatchSpawnPoint
+
+- type: entity
+  name: match finished respawn point
+  id: MatchFinishedRespawnPoint
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    state: green
+  - type: RespawnLocation
+
+- type: entity
+  name: match observer spawn point
+  id: MatchObserverSpawnPoint
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    state: green
+  - type: ObserverLocation

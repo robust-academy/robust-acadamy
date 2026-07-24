@@ -14,7 +14,8 @@ namespace Content.Shared.CombatMode.Pacification;
 /// If you want full-pacifism (no combat mode at all), you can simply set <see cref="DisallowAllCombat"/> before adding.
 /// </summary>
 [RegisterComponent, NetworkedComponent, AutoGenerateComponentPause]
-[Access(typeof(PacificationSystem))]
+// [Access(typeof(PacificationSystem))] todo: bring this up with upstream, having the accesses is very annoying
+// todo: this component is also totally broken
 public sealed partial class PacifiedComponent : Component
 {
     /// <summary>

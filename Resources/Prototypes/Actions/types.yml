@@ -194,6 +194,10 @@
     icon:
       sprite: Structures/Specific/anomaly.rsi
       state: anom4
+  # ROBUST start
+  - type: DangerousAction
+    pacificationMessage: cheater-action-popup
+  # ROBUST end
 
 - type: entity
   parent: BaseImplantAction

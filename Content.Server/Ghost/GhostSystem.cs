@@ -484,8 +484,11 @@ namespace Content.Server.Ghost
         public EntityUid? SpawnGhost(Entity<MindComponent?> mind, EntityUid targetEntity,
             bool canReturn = false)
         {
-            _transformSystem.TryGetMapOrGridCoordinates(targetEntity, out var spawnPosition);
-            return SpawnGhost(mind, spawnPosition, canReturn);
+            // ROBUST START
+            return null; // todo: goodness fix this. Everytime you
+            // _transformSystem.TryGetMapOrGridCoordinates(targetEntity, out var spawnPosition);
+            // return SpawnGhost(mind, spawnPosition, canReturn);
+            // ROBUST END
         }
 
         private bool IsValidSpawnPosition(EntityCoordinates? spawnPosition)

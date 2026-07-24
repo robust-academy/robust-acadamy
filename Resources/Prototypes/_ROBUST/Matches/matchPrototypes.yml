@@ -1,0 +1,24 @@
+- type: match
+  id: 1v1Match
+  matchName: One Vs One
+  matchEntProtoId: TestMatch
+
+- type: match
+  id: 1v1Uplink
+  matchName: One Vs One (Uplink)
+  matchEntProtoId: UplinkOneVsOne
+
+- type: match
+  id: 1v1v1Match
+  matchName: One Vs One Vs One
+  matchEntProtoId: OneVsOneVsOneMatch
+
+- type: match
+  id: 2v2Match
+  matchName: Two Vs Two
+  matchEntProtoId: TwoVsTwoMatch
+
+- type: match
+  id: 3v3Match
+  matchName: Three Vs Three
+  matchEntProtoId: ThreeVsThreeMatch

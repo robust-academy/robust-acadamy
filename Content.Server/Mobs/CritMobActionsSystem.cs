@@ -39,7 +39,9 @@ public sealed partial class CritMobActionsSystem : EntitySystem
         if (!TryComp<ActorComponent>(uid, out var actor) || !_mobState.IsCritical(uid))
             return;
 
-        _host.ExecuteCommand(actor.PlayerSession, "ghost");
+        // ROBUST START
+        // _host.ExecuteCommand(actor.PlayerSession, "ghost");
+        // ROBUST END
         args.Handled = true;
     }
 

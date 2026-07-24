@@ -1,0 +1,379 @@
+- type: entityTable
+  id: PrimaryTable
+  table: !type:GroupSelector
+    children:
+    - !type:AllSelector
+      children:
+      - id: Handcuffs
+      - !type:GroupSelector
+        children:
+        - id: Stunbaton
+        - id: WeaponDisabler
+        - id: WeaponDisablerSMG
+          weight: 0.75
+        weight: 2.5
+
+    - !type:AllSelector
+      children:
+      - id: WeaponSubMachineGunWt550
+      - id: MagazinePistolSubMachineGunTopMounted
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - id: WeaponPistolMk58
+      - id: MagazinePistol
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - id: WeaponSubMachineGunWt550
+      - id: MagazinePistolSubMachineGunTopMounted
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - !type:GroupSelector
+        children:
+        - id: WeaponSubMachineGunC20r
+        - id: WeaponSubMachineGunDrozd
+      - id: MagazinePistolSubMachineGun
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - !type:GroupSelector
+        children:
+        - id: WeaponShotgunEnforcer
+        - id: WeaponShotgunBulldog
+        - id: WeaponShotgunDoubleBarreled
+        - id: WeaponShotgunKammerer
+        - id: WeaponShotgunSawn
+      - !type:GroupSelector
+        children:
+        - id: MagazineShotgun
+        - id: MagazineShotgunSlug
+          weight: 0.75
+        - id: MagazineShotgunIncendiary
+          weight: 0.25
+        - id: ShellShotgun
+          weight: 0.4
+          amount: !type:RangeNumberSelector
+            range: 5, 12
+        - id: ShellShotgunSlug
+          weight: 0.4
+          amount: !type:RangeNumberSelector
+            range: 5, 12
+        - id: ShellShotgunIncendiary
+          weight: 0.25
+          amount: !type:RangeNumberSelector
+            range: 2, 6
+        - id: ShellShotgunUranium
+          weight: 0.3
+          amount: !type:RangeNumberSelector
+            range: 3, 7
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+        weight: 5.5
+
+    - !type:AllSelector
+      children:
+      - id: WeaponPistolViper
+      - id: MagazinePistolHighCapacity
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - id: WeaponPistolCobra
+      - id: MagazinePistolCaselessRifle
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - id: WeaponRifleLecter
+      - id: MagazineRifle
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - id: WeaponShotgunImprovisedLoaded
+      - id: ShellShotgunImprovised
+        amount: !type:RangeNumberSelector
+          range: 3, 10
+
+    - !type:AllSelector
+      children:
+      - id: WeaponRifleEstoc
+      - id: MagazineRifle
+        amount: !type:RangeNumberSelector
+          range: 1, 2
+
+    - !type:AllSelector
+      children:
+      - id: WeaponRevolverInspector
+      - id: SpeedLoaderMagnum
+
+    - !type:AllSelector
+      children:
+      - id: WeaponSniperHristov
+      - id: MagazineBoxAntiMateriel
+
+    - id: WeaponEnergyShotgun
+      weight: 0.6
+    - id: WeaponAntiqueLaser
+    - id: WeaponShotgunHushpup
+    - id: WeaponXrayCannon
+    - id: WeaponLaserCannon
+    - id: ClothingBackpackDuffelSyndicateCarpSuitPlusPlusPlus
+    - id: WeaponAdvancedLaser
+    - id: WeaponLaserCarbine
+    - id: WeaponTemperatureGun
+    - id: WeaponRevolverDeckard
+    - id: ThrowingKnivesKit
+    - id: WeaponProtoKineticAccelerator
+      weight: 0.5
+    - id: WeaponLightMachineGunL6
+      weight: 0.5
+
+    # melee
+    - !type:AllSelector
+      children:
+      # booster
+      - !type:GroupSelector
+        children:
+        - id: SyringeMeth
+        - id: SyringeEphedrine
+        - id: Stimpack
+          weight: 0.65
+        - id: StimpackMini
+          weight: 0.65
+          amount: !type:RangeNumberSelector
+            range: 1, 2
+      # weapon
+      - !type:GroupSelector
+        children:
+        - id: CaptainSabre
+        - id: EnergySword
+        - id: ClothingHandsGlovesNorthStar
+        - id: Truncheon
+          weight: 1.5
+      weight: 5.5
+
+- type: entityTable
+  id: ArmorTable
+  table: !type:GroupSelector
+    children:
+      # scrap
+      - !type:AllSelector
+        children:
+        - id: ClothingOuterArmorScrap
+        - id: ClothingHeadHelmetScrap
+          prob: 0.8
+        weight: 0.6
+
+      # tider
+      - !type:AllSelector
+        children:
+        - id: ClothingEyesHudMedical
+          prob: 0.5
+        - id: ClothingOuterWinterColorGray
+          prob: 0.8
+        - !type:GroupSelector
+          children:
+          - id: ClothingShoesGaloshes
+            weight: 1.25
+          - id: ClothingShoesBootsJump
+          - !type:AllSelector
+            children:
+            - id: ClothingShoesBootsSpeed
+            - id: PowerCellMedium
+          prob: 0.6
+        - id: ClothingHandsGlovesColorYellow
+          prob: 0.6
+        weight: 2.0
+
+      # syndicate
+      - !type:GroupSelector
+        children:
+        - id: ClothingOuterVestWebElite
+        - id: ClothingOuterVestWeb
+        - id: EnergyShield
+        - id: ClothingOuterHardsuitSyndie
+          weight: 0.5
+        weight: 0.5
+
+      # hardsuits
+      - !type:GroupSelector
+        children:
+        - id: ClothingOuterHardsuitEngineering
+          weight: 1.5
+        - id: ClothingOuterHardsuitSalvage
+        - id: ClothingOuterHardsuitGoliath
+        - id: ClothingOuterHardsuitSecurity
+          weight: 1.5
+        - id: ClothingOuterHardsuitVoidParamed
+          weight: 0.75
+        - id: ClothingOuterHardsuitRd
+        - id: ClothingOuterHardsuitEngineeringWhite
+        - id: ClothingOuterHardsuitMedical
+          weight: 0.5
+        - id: ClothingOuterHardsuitCap
+          weight: 0.3
+        weight: 2.25
+
+      - id: ClothingOuterArmorReflective
+        weight: 0.3
+
+      - id: ClothingOuterArmorCaptainCarapace
+        weight: 0.45
+
+      # sec armor
+      - !type:GroupSelector
+        children:
+        - id: ClothingHeadHelmetBasic
+          prob: 0.7
+        - !type:GroupSelector
+          children:
+          - id: ClothingOuterArmorBasic
+          - id: ClothingOuterArmorBasicSlim
+          - id: ClothingOuterArmorBulletproof
+            weight: 0.7
+        weight: 2.5
+
+      # riot
+      - !type:GroupSelector
+        children:
+        - id: ClothingOuterArmorRiot
+        - id: RiotShield
+          prob: 0.6
+        - id: ClothingHeadHelmetRiot
+          prob: 0.4
+
+      - !type:GroupSelector
+        children:
+        - id: ClothingShoesGaloshes
+          weight: 1.25
+        - id: ClothingShoesBootsJump
+        - !type:AllSelector
+          children:
+          - id: ClothingShoesBootsSpeed
+          - id: PowerCellMedium
+        weight: 0.5
+
+- type: entityTable
+  id: SecondaryTable
+  table: !type:GroupSelector
+    children:
+    - !type:AllSelector
+      children:
+      - !type:GroupSelector
+        children:
+        - id: Flash
+          weight: 0.2
+        - id: HoloprojectorSecurity
+        - id: TelescopicShield
+        - id: Bola
+        - id: HoloprojectorField
+#        - id: WeaponTaser
+        - id: WeaponForceGun
+        - id: HandTeleporter
+          weight: 0.4
+        - id: WeaponEnergyCrossbow
+        - id: EmpImplanter
+        - id: FreedomImplanter
+          weight: 0.5
+        - id: ScramImplanter
+          weight: 1.5
+        - id: WeaponFlareGun
+        rolls: 0, 1
+      - !type:GroupSelector
+        children:
+        - id: GrenadeFlashBang
+        - id: GrenadeShrapnel
+        - id: GrenadeStinger
+        - id: DrinkWaterBottleFull
+        - id: GrenadeIncendiary
+        - id: ClusterBananaPeel
+          weight: 0.25
+        - id: TrashBananaPeel
+        - id: FoodBanana
+        - id: DrinkSpaceLube
+        - id: FoodPieBananaCream
+        - id: SoapSyndie
+        - id: SlipocalypseClusterSoap
+          weight: 0.75
+        - id: SoapOmega
+          weight: 0.5
+        - id: SoapDeluxe
+          weight: 1.5
+        - id: SyndieMiniBomb
+          weight: 0.7
+        - id: PenExplodingBox
+          weight: 0.7
+        - id: PipeBomb
+          weight: 1.25
+#        - id: C4 todo: fix this going on your head
+        - id: SingularityGrenade
+        rolls: 1, 2
+
+- type: entityTable
+  id: HealingTable
+  table: !type:GroupSelector
+    children:
+    - id: Gauze
+      weight: 1.5
+    - id: Brutepack
+      weight: 1.5
+    - id: SyringeBicaridine
+    - id: SyringeOmnizine
+    - id: Ointment
+    - id: MedicatedSuture
+    - id: RegenerativeMesh
+    - id: BruteAutoInjector
+    - !type:AllSelector
+      children:
+      - id: Lighter
+      - id: CigPackSyndicate
+    - !type:NestedSelector
+      tableId: NukeOpsMedKitGeneral
+      weight: 1.5
+    - !type:GroupSelector
+      children: []
+      weight: 0.5
+
+- type: entityTable
+  id: BeltTable
+  table: !type:GroupSelector
+    children:
+    - id: ClothingBeltMedicalFilled
+    - id: ClothingBeltMilitaryWebbing
+      weight: 2.0
+    - id: ClothingBeltUtilityFilled
+    - id: ClothingBeltSecurity
+      weight: 2.0
+    - id: ClothingBeltStorageWaistbag
+      weight: 2.5
+    - id: ClothingBeltHolster
+      weight: 0.5
+    - id: ClothingBeltJanitorFilled
+
+- type: entityTable
+  id: DefaultOneVsOneEquipment
+  table: !type:AllSelector
+    children:
+    - id: ClothingUniformJumpsuitColorGrey
+    - id: ClothingShoesColorBlack
+    - id: ClothingHeadsetGrey
+    - id: ClothingBackpack
+    - id: CombatKnife
+    - id: BoxSurvival
+    - id: Flare
+    - id: Crowbar
+    - id: PassengerPDA

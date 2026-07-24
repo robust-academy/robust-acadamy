@@ -1,0 +1,16 @@
+#weapon names:
+#WT550
+#WeaponSubMachineGunC20r
+#WeaponRifleLecter
+#WeaponShotgunBulldog
+#WeaponEnergyShotgun
+
+- type: entityTable
+  id: BasicKitsTable
+  table: !type:GroupSelector
+    children:
+    - id: WeaponSubMachineGunWt550
+    - id: WeaponSubMachineGunC20r
+    - id: WeaponShotgunBulldog
+    - id: WeaponEnergyShotgun
+

@@ -1,0 +1,14 @@
+- type: gameMap
+  id: lobby
+  mapName: 'lobby'
+  mapPath: /Maps/_ROBUST/lobby.yml
+  minPlayers: 0
+  stations:
+    lobby:
+      stationProto: StandardNanotrasenStation
+      components:
+        - type: StationNameSetup
+          mapNameTemplate: 'lobby'
+        - type: StationJobs
+          availableJobs:
+            Passenger: [ -1, -1 ]

@@ -71,7 +71,7 @@ public sealed partial class MindSystem : SharedMindSystem
         if (!component.GhostOnShutdown || _gameTicker.RunLevel == GameRunLevel.PreRoundLobby)
             return;
 
-        var ghost = _ghosts.SpawnGhost((mindId, mind), uid);
+        var ghost = _ghosts.SpawnGhost((mindId, mind), uid); // todo: fix whatever this is...
         if (ghost != null)
             // Log these to make sure they're not causing the GameTicker round restart bugs...
             Log.Debug($"Entity \"{ToPrettyString(uid)}\" for {mind.CharacterName} was deleted, spawned \"{ToPrettyString(ghost)}\".");
@@ -205,15 +205,15 @@ public sealed partial class MindSystem : SharedMindSystem
             // Transfer-to-null should just detach a mind.
             // If people want to create a ghost, that should be done explicitly via some TransferToGhost() method, not
             // not implicitly via optional arguments.
-
-            var position = Deleted(mind.OwnedEntity)
-                ? _transform.ToMapCoordinates(_gameTicker.GetObserverSpawnPoint())
-                : _transform.GetMapCoordinates(mind.OwnedEntity.Value);
-
-            entity = Spawn(GameTicker.ObserverPrototypeName, position);
-            component = EnsureComp<MindContainerComponent>(entity.Value);
-            var ghostComponent = Comp<GhostComponent>(entity.Value);
-            _ghosts.SetCanReturnToBody((entity.Value, ghostComponent), false);
+            //
+            // var position = Deleted(mind.OwnedEntity)
+            //     ? _transform.ToMapCoordinates(_gameTicker.GetObserverSpawnPoint())
+            //     : _transform.GetMapCoordinates(mind.OwnedEntity.Value);
+            //
+            // entity = Spawn(GameTicker.ObserverPrototypeName, position);
+            // component = EnsureComp<MindContainerComponent>(entity.Value);
+            // var ghostComponent = Comp<GhostComponent>(entity.Value);
+            // _ghosts.SetCanReturnToBody((entity.Value, ghostComponent), false);
         }
 
         var oldEntity = mind.OwnedEntity;

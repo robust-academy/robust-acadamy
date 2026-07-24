@@ -1,0 +1,10 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      xmlns:timer="clr-namespace:Content.Client._ROBUST.Match.Timer"
+                      Title="KIT SELECTION"
+                      MinSize="800 450"
+                      SetSize="950 620">
+    <BoxContainer Name="MainContainer" Orientation="Horizontal" Margin="10 0 20 0">
+        <timer:CountdownTimer Name="CountdownTimer" Access="Public" />
+    </BoxContainer>
+</controls:FancyWindow>
