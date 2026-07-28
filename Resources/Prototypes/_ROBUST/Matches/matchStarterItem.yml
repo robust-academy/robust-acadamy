@@ -11,5 +11,4 @@
   - type: Sprite
     drawdepth: WallMountedItems
     sprite: _ROBUST\Structures\match.rsi
-    state: selector
   - type: Appearance
