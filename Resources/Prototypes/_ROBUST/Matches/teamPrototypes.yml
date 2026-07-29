@@ -13,7 +13,7 @@
 - type: factionIcon
   id: BlueTeamIcon
   icon:
-    sprite: /Textures/Robust/team-icons.rsi
+    sprite: /Textures/_Robust/team-icons.rsi
     state: blue
   isShaded: true
   priority: 0
@@ -22,7 +22,7 @@
 - type: factionIcon
   id: RedTeamIcon
   icon:
-    sprite: /Textures/Robust/team-icons.rsi
+    sprite: /Textures/_Robust/team-icons.rsi
     state: red
   isShaded: true
   priority: 0
