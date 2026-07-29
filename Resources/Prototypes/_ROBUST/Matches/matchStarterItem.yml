@@ -8,7 +8,11 @@
     interfaces:
       enum.MatchSelectionUiKey.Key:
         type: MatchSelectionBoundUserInterface
+  - type: ActivatableUI
+    key: enum.MatchSelectionUiKey.Key
   - type: Sprite
     drawdepth: WallMountedItems
-    sprite: Robust\match.rsi
+    sprite: _Robust/match.rsi
+    layers:
+    - state: selector
   - type: Appearance
