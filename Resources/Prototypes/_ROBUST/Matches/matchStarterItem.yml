@@ -10,5 +10,5 @@
         type: MatchSelectionBoundUserInterface
   - type: Sprite
     drawdepth: WallMountedItems
-    sprite: _ROBUST\Structures\match.rsi
+    sprite: Robust\match.rsi
   - type: Appearance
