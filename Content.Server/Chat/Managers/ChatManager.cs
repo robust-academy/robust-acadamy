@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
+using Content.Server._ROBUST.MultiServer;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Administration.Systems;
@@ -49,6 +50,7 @@ internal sealed partial class ChatManager : IChatManager
     [Dependency] private DiscordChatLink _discordLink = default!;
     [Dependency] private ILogManager _logManager = default!;
     [Dependency] private ILocalizationManager _localizationManager = default!;
+    [Dependency] private MultiServerManager _multiServer = default!; // ROBUST
 
     private ISawmill? _sawmill = default!;
 
@@ -123,7 +125,7 @@ internal sealed partial class ChatManager : IChatManager
         // _sawmill might have not been initialized when DispatchServerAnnouncement is called
         // during server setup when some cvars are changed
         _sawmill?.Info(message);
-        
+
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Server announcement: {message}");
     }
 
@@ -305,6 +307,10 @@ internal sealed partial class ChatManager : IChatManager
         ChatMessageToAll(ChatChannel.OOC, message, wrappedMessage, EntityUid.Invalid, hideChat: false, recordReplay: true, colorOverride: colorOverride, author: player.UserId);
         _discordLink.SendMessage(message, player.Name, ChatChannel.OOC);
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"OOC from {player:Player}: {message}");
+
+        // ROBUST START
+        _multiServer.SendMessageOtherServers(message, player.Name);
+        // ROBUST END
     }
 
     private void SendAdminChat(ICommonSession player, string message)

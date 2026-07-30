@@ -56,12 +56,40 @@ public sealed partial class MultiServerManager
 
             var request = ctx.Request;
 
-            var messageInfo = await JsonSerializer.DeserializeAsync<POSTMessageInfo>(request.InputStream, JsonOptions, cancellationToken: token);
+            try
+            {
+                var messageInfo = await JsonSerializer.DeserializeAsync<POSTMessageInfo>(request.InputStream,
+                    JsonOptions,
+                    cancellationToken: token);
 
-            if (messageInfo is null)
-                continue; // throw error?
+                if (messageInfo is null)
+                    continue; // throw error?
 
-            MessageQueue.Enqueue(messageInfo);
+                MessageQueue.Enqueue(messageInfo);
+            }
+            catch
+            {
+                Sawmill.Error("Could not parse message");
+            }
+        }
+    }
+
+    public void SendMessageOtherServers(string message, string player)
+    {
+        var myName = _cfg.GetCVar(RobustCCVars.ServerName);
+
+        var servers = _cfg.GetCVar(RobustCCVars.MutliServerOtherServers).Split(",");
+
+        foreach (var server in servers)
+        {
+            var name = server.Split("|")[0];
+            var ip = server.Split("|")[1];
+            var port = ushort.Parse(server.Split("|")[2]);
+
+            if (name.Equals(myName))
+                continue;
+
+            SendMessage(ip, port, message, player);
         }
     }
 
