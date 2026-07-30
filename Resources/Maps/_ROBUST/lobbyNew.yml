@@ -4,8 +4,8 @@ meta:
   engineVersion: 283.1.0
   forkId: ""
   forkVersion: ""
-  time: 07/30/2026 07:40:36
-  entityCount: 764
+  time: 07/30/2026 18:04:03
+  entityCount: 784
 maps:
 - 568
 grids:
@@ -1452,6 +1452,86 @@ entities:
     - type: Transform
       parent: 2
       pos: 5.5,-14.5
+  - uid: 765
+    components:
+    - type: Transform
+      parent: 2
+      pos: 2.5,0.5
+  - uid: 766
+    components:
+    - type: Transform
+      parent: 2
+      pos: 1.5,0.5
+  - uid: 767
+    components:
+    - type: Transform
+      parent: 2
+      pos: 0.5,0.5
+  - uid: 768
+    components:
+    - type: Transform
+      parent: 2
+      pos: -0.5,0.5
+  - uid: 769
+    components:
+    - type: Transform
+      parent: 2
+      pos: -1.5,0.5
+  - uid: 770
+    components:
+    - type: Transform
+      parent: 2
+      pos: -2.5,0.5
+  - uid: 771
+    components:
+    - type: Transform
+      parent: 2
+      pos: -3.5,0.5
+  - uid: 772
+    components:
+    - type: Transform
+      parent: 2
+      pos: -3.5,0.5
+  - uid: 773
+    components:
+    - type: Transform
+      parent: 2
+      pos: -4.5,0.5
+  - uid: 774
+    components:
+    - type: Transform
+      parent: 2
+      pos: -5.5,0.5
+  - uid: 775
+    components:
+    - type: Transform
+      parent: 2
+      pos: -6.5,0.5
+  - uid: 776
+    components:
+    - type: Transform
+      parent: 2
+      pos: -7.5,0.5
+  - uid: 777
+    components:
+    - type: Transform
+      parent: 2
+      pos: -8.5,0.5
+  - uid: 778
+    components:
+    - type: Transform
+      parent: 2
+      pos: -1.5,0.5
+  - uid: 779
+    components:
+    - type: Transform
+      parent: 2
+      pos: -1.5,1.5
+  - uid: 780
+    components:
+    - type: Transform
+      parent: 2
+      pos: -1.5,2.5
 - proto: CableHV
   entities:
   - uid: 593
@@ -1990,6 +2070,23 @@ entities:
     - type: Transform
       parent: 2
       pos: 6.5,-0.5
+- proto: CrayonBoxEmpty
+  entities:
+  - uid: 782
+    components:
+    - type: Transform
+      parent: 2
+      pos: 9.480188,0.88442177
+  - uid: 783
+    components:
+    - type: Transform
+      parent: 2
+      pos: 9.275435,0.36940712
+  - uid: 784
+    components:
+    - type: Transform
+      parent: 2
+      pos: 9.593388,0.08441365
 - proto: CrystalBlue
   entities:
   - uid: 560
@@ -3595,6 +3692,13 @@ entities:
     - type: Transform
       parent: 2
       pos: 3.5,-8.5
+- proto: ServerSelector
+  entities:
+  - uid: 781
+    components:
+    - type: Transform
+      parent: 2
+      pos: 2.5,0.5
 - proto: ShelfChemistryChemistrySecure
   entities:
   - uid: 318
