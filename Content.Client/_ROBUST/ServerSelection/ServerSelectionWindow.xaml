@@ -1,0 +1,23 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="Match selector"
+                      MinSize="450 200"
+                      SetSize="460 210">
+    <BoxContainer Name="MainContainer" Orientation="Vertical" Margin="10 0 20 0">
+
+        <Label Text="Connect to another server here, your game will reload!" />
+
+        <BoxContainer Orientation="Horizontal" Margin="5 5 5 5">
+            <Label Text="Your ping here is:" Margin="0 0 5 0" />
+            <Label Name="PingLabel" />
+        </BoxContainer>
+
+        <BoxContainer Orientation="Horizontal" Margin="5 5 5 5">
+            <Label Text="Server:" Margin="0 0 5 0" />
+            <OptionButton Name="ServerDropdown" />
+        </BoxContainer>
+
+        <Button Name="SelectServerButton" Text="Select server!"/>
+
+    </BoxContainer>
+</controls:FancyWindow>

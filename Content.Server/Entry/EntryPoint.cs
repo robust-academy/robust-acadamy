@@ -1,3 +1,4 @@
+using Content.Server._ROBUST.MultiServer;
 using Content.Server.Acz;
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
@@ -77,6 +78,9 @@ namespace Content.Server.Entry
         [Dependency] private ServerInfoManager _serverInfo = default!;
         [Dependency] private ServerUpdateManager _updateManager = default!;
         [Dependency] private ServerFeedbackManager _feedbackManager = null!;
+        // ROBUST START
+        [Dependency] private MultiServerManager _multiServer = default!;
+        // ROBUST END
 
         public override void PreInit()
         {
@@ -133,6 +137,9 @@ namespace Content.Server.Entry
             _watchlistWebhookManager.Initialize();
             _job.Initialize();
             _rateLimit.Initialize();
+            // ROBUST START
+            _multiServer.Initialize();
+            // ROBUST END
         }
 
         public override void PostInit()

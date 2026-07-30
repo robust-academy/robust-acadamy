@@ -65,6 +65,10 @@ public sealed partial class DeletePlayerBodies : IPhase
         foreach (var player in players)
         {
             var oldBody = player.AttachedEntity;
+
+            if (oldBody == null)
+                throw new Exception("Player body is null not good!!!!");
+
             matchSystem._player.SetAttachedEntity(player, null, true);
 
             if (oldBody != null)
