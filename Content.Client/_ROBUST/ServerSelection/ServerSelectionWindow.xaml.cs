@@ -15,8 +15,6 @@ public sealed partial class ServerSelectionWindow : FancyWindow
     [Dependency] private IConfigurationManager _cfg = default!;
     [Dependency] private IGameController _gameController = default!;
 
-    private EntityUid? CurrentlySelectedMatch;
-
     public ServerSelectionWindow()
     {
         RobustXamlLoader.Load(this);
