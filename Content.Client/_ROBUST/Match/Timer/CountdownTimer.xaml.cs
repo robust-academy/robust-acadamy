@@ -33,6 +33,7 @@ public sealed partial class CountdownTimer : Control
 
     private void SetTime(TimeSpan time)
     {
+        // todo: make seconds be larger and not cap out at 60
         CountDown.Text = TimeFormat switch
         {
             TimeFormat.MinutesSecondsMilliseconds => time.ToString(@"mm\:ss\.ff"),

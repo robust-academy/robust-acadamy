@@ -16,3 +16,21 @@
     layers:
     - state: selector
   - type: Appearance
+
+- type: entity
+  parent: BaseWallmount
+  id: ServerSelector
+  name: Server selector
+  components:
+  - type: ActivatableUI
+    key: enum.ServerSelectionUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.ServerSelectionUiKey.Key:
+        type: ServerSelectionBoundUserInterface
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: _Robust/server-selector.rsi
+    layers:
+    - state: selector
+  - type: Appearance
