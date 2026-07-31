@@ -10,10 +10,7 @@ namespace Content.Server._ROBUST.MultiServer;
 public sealed partial class MultiServerSystem : EntitySystem
 {
     [Dependency] private MultiServerManager _multiServerManager = default!;
-    [Dependency] private MatchControllerSystem _match = default!;
-    [Dependency] private MatchManagerSystem _matchManager = default!;
     [Dependency] private ILogManager _log = default!;
-    [Dependency] private IConfigurationManager _cfg = default!;
     [Dependency] private IChatManager _chat = default!;
 
     public ISawmill Sawmill = default!;
@@ -33,7 +30,7 @@ public sealed partial class MultiServerSystem : EntitySystem
         if (!_multiServerManager.MessageQueue.TryDequeue(out var messageInfo))
             return;
 
-        _chat.ChatMessageToAll(ChatChannel.OOC, messageInfo.Message, $"({messageInfo.ServerName}) {messageInfo.PlayerName}: {messageInfo.Message}", EntityUid.Invalid, true, false);
+        _chat.ChatMessageToAll(ChatChannel.OOC, messageInfo.Message, $"({messageInfo.ServerName}) {messageInfo.PlayerName}: {messageInfo.Message}", EntityUid.Invalid, false, false);
     }
 
 }
