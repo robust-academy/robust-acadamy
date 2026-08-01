@@ -1,4 +1,5 @@
 using System.Globalization;
+using Content.Server._ROBUST.AutoMute;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
@@ -156,6 +157,13 @@ public sealed partial class ChatSystem : SharedChatSystem
             return;
         }
 
+        // ROBUST START
+        var roubstEvnt = new ROBUSTBeforeMessageEvent(player, message);
+        RaiseLocalEvent(ref roubstEvnt);
+        if (roubstEvnt.Cancelled)
+            return;
+        // ROBUST END
+
         if (player != null && _chatManager.HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
 
@@ -275,6 +283,13 @@ public sealed partial class ChatSystem : SharedChatSystem
         RaiseLocalEvent(source, ref ev, true);
         if (ev.Cancelled)
             return;
+
+        // ROBUST START
+        var roubstEvnt = new ROBUSTBeforeMessageEvent(player, message);
+        RaiseLocalEvent(ref roubstEvnt);
+        if (roubstEvnt.Cancelled)
+            return;
+        // ROBUST END
 
         switch (sendType)
         {

@@ -1,6 +1,7 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Runtime.InteropServices;
+using Content.Server._ROBUST.AutoMute;
 using Content.Server._ROBUST.MultiServer;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -254,6 +255,13 @@ internal sealed partial class ChatManager : IChatManager
     {
         if (HandleRateLimit(player) != RateLimitStatus.Allowed)
             return;
+
+        // ROBUST START
+        var roubstEvnt = new ROBUSTBeforeMessageEvent(player, message);
+        _entityManager.EventBus.RaiseEvent(EventSource.Local, ref roubstEvnt);
+        if (roubstEvnt.Cancelled)
+            return;
+        // ROBUST END
 
         // Check if message exceeds the character limit
         if (message.Length > MaxMessageLength)
