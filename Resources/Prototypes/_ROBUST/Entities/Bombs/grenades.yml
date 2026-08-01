@@ -1,0 +1,37 @@
+- type: entity
+  parent: [ SmokeGrenade, BaseSyndicateContraband ]
+  id: GlueGrenade
+  name: Gluenade
+  description: A grenade filled with industrial-strength adhesive, guaranteed to slow down any who stand in the affected area. The adhesive evaporates over time.
+  components:
+  - type: Sprite
+    sprite: Robust/glue.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 15
+    spreadAmount: 50
+    smokePrototype: Foam
+    solution:
+      reagents:
+      - ReagentId: SpaceGlueTactical
+        Quantity: 30
+
+- type: entity
+  parent: [ SmokeGrenade, BaseSyndicateContraband ]
+  id: LubeGrenade
+  name: Lube Grenade
+  description: A grenade filled with lube.
+  components:
+  - type: Sprite
+    sprite: Robust/modular.rsi
+  - type: SmokeOnTrigger
+    keysIn:
+    - timer
+    duration: 15
+    spreadAmount: 50
+    smokePrototype: Foam
+    solution:
+      reagents:
+      - ReagentId: SpaceLube
+        Quantity: 30
