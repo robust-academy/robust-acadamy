@@ -12,4 +12,8 @@ public sealed partial class RobustCCVars
 
     public static readonly CVarDef<string> ServerName =
         CVarDef.Create("multi_server.server_name", "", CVar.REPLICATED);
+
+    // format: WORD|MUTE_TIME(in minutes),WORD|MUTE_TIME(in minutes),...
+    public static readonly CVarDef<string> BannedWords =
+        CVarDef.Create("word_bans.banned_words", "chud|1", CVar.REPLICATED);
 }
