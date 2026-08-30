@@ -309,7 +309,7 @@ internal sealed partial class ChatManager : IChatManager
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"OOC from {player:Player}: {message}");
 
         // ROBUST START
-        _multiServer.SendMessageOtherServers(message, player.Name);
+        // _multiServer.SendMessageOtherServers(message, player.Name);
         // ROBUST END
     }
 
