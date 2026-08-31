@@ -1,17 +1,22 @@
 - type: matchMap
   id: BoxVaultMap
   mapName: "Bagel (Vault)"
-  mapPath: "Maps/_ROBUST/ArenaGrid.yml" # todo: change this yaml path
+  mapPath: "Maps/_ROBUST/Grids/BoxVault.yml" # todo: change this yaml path
 
 - type: matchMap
   id: OldBridgeDMMap
   mapName: "Old Bridge DM"
-  mapPath: "Maps/_ROBUST/OldBrigeDM.yml"
+  mapPath: "Maps/_ROBUST/Grids/OldBrigeDM.yml"
 
 - type: matchMap
   id: SkibidiMap
   mapName: "Skibidi map"
-  mapPath: "Maps/_ROBUST/skibidPOWER.yml"
+  mapPath: "Maps/_ROBUST/Grids/skibidPOWER.yml"
+
+- type: matchMap
+  id: SyndicateThunderdomeMap
+  mapName: "Syndicate Thunderdome"
+  mappath: "Maps/_ROBUST/Grids/SyndicateThunderdome.yml"
 
 - type: mapPack
   id: DefaultMaps
@@ -19,3 +24,4 @@
   - BoxVaultMap
   - OldBridgeDMMap
   - SkibidiMap
+  - SyndicateThunderdomeMap

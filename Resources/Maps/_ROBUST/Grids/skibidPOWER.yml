@@ -1,18 +1,18 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 282.0.0
+  engineVersion: 283.1.0
   forkId: ""
   forkVersion: ""
-  time: 07/11/2026 06:25:06
-  entityCount: 3755
+  time: 08/31/2026 12:23:13
+  entityCount: 3745
 maps: []
 grids:
 - 1
 orphans:
 - 1
 nullspace:
-- 1699
+- 1718
 tilemap:
   0: Space
   7: FloorAstroGrass
@@ -1622,7 +1622,7 @@ entities:
     - type: RadiationGridResistance
     - type: SurveillanceCameraMap
     - type: StationMember
-      station: 1699
+      station: 1718
     - type: NavMap
 - proto: AccessConfigurator
   entities:
@@ -1700,15 +1700,6 @@ entities:
     - type: Action
       originalIconColor: '#FFFFFFFF'
       container: 853
-  - uid: 3421
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3420
-    - type: Action
-      originalIconColor: '#FFFFFFFF'
-      container: 3420
 - proto: ActionToggleLight
   entities:
   - uid: 826
@@ -2860,7 +2851,7 @@ entities:
       pos: 2.5,-11.5
     - type: Door
       state: Opening
-      secondsUntilStateChange: -45.290333
+      secondsUntilStateChange: -391.98907
     - type: DeviceLinkSource
       lastSignals:
         DoorStatus: True
@@ -5187,12 +5178,6 @@ entities:
     - type: AccessReader
       accessListsOriginal:
       - - Engineering
-  - uid: 1697
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: -3.5,-16.5
   - uid: 1972
     mapInit: true
     paused: true
@@ -5453,18 +5438,6 @@ entities:
       - AAGGGTCTGTCAGGCG
       - TCAATTTACGAGTCTC
       - CCGGTGTCTTCAACGA
-- proto: BeachBall
-  entities:
-  - uid: 3423
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3418
-    - type: EmitSoundOnCollide
-      nextSound: -1558.1974166
-    - type: Physics
-      canCollide: False
 - proto: Beaker
   entities:
   - uid: 240
@@ -5998,24 +5971,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 22.174194,-11.408051
-    - type: UseDelay
-      delays:
-        default:
-          startTime: 0
-          length: 0.5
-          endTime: 0
-    - type: EmitSoundOnCollide
-      nextSound: -1558.1974166
-    - type: MeleeWeapon
-      nextAttack: -1558.1974166
-    - type: Physics
-      canCollide: False
-  - uid: 3424
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3418
     - type: UseDelay
       delays:
         default:
@@ -7793,7 +7748,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 31.5,-24.5
+      pos: 33.5,-39.5
   - uid: 258
     mapInit: true
     paused: true
@@ -11095,6 +11050,21 @@ entities:
     - type: Transform
       parent: 1
       pos: -2.5,-18.5
+  - uid: 1463
+    components:
+    - type: Transform
+      parent: 1
+      pos: -0.5,-18.5
+  - uid: 1474
+    components:
+    - type: Transform
+      parent: 1
+      pos: -1.5,-18.5
+  - uid: 1514
+    components:
+    - type: Transform
+      parent: 1
+      pos: 0.5,-18.5
   - uid: 1611
     components:
     - type: Transform
@@ -11168,6 +11138,11 @@ entities:
     - type: Transform
       parent: 1
       pos: 0.5,-28.5
+  - uid: 1699
+    components:
+    - type: Transform
+      parent: 1
+      pos: -3.5,-17.5
   - uid: 1702
     mapInit: true
     paused: true
@@ -12633,11 +12608,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 33.5,-39.5
-  - uid: 1463
-    components:
-    - type: Transform
-      parent: 1
-      pos: -2.5,-16.5
   - uid: 1465
     mapInit: true
     paused: true
@@ -12645,16 +12615,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 33.5,-38.5
-  - uid: 1474
-    components:
-    - type: Transform
-      parent: 1
-      pos: -2.5,-17.5
-  - uid: 1482
-    components:
-    - type: Transform
-      parent: 1
-      pos: -2.5,-18.5
   - uid: 1612
     mapInit: true
     paused: true
@@ -12674,6 +12634,11 @@ entities:
     - type: Transform
       parent: 1
       pos: -3.5,-16.5
+  - uid: 1700
+    components:
+    - type: Transform
+      parent: 1
+      pos: -3.5,-17.5
   - uid: 1705
     mapInit: true
     paused: true
@@ -16002,7 +15967,7 @@ entities:
       parent: 1
       pos: 20.490417,-11.611145
     - type: SuitSensor
-      station: 1699
+      station: 1718
       nextUpdate: 0.7377089
       mode: SensorVitals
     - type: DeviceNetwork
@@ -16021,7 +15986,7 @@ entities:
     - type: Transform
       parent: 1566
     - type: SuitSensor
-      station: 1699
+      station: 1718
       nextUpdate: 0.7377089
       mode: SensorCords
     - type: DeviceNetwork
@@ -16038,7 +16003,7 @@ entities:
     - type: Transform
       parent: 1589
     - type: SuitSensor
-      station: 1699
+      station: 1718
       nextUpdate: 0.7377089
       mode: SensorCords
     - type: DeviceNetwork
@@ -17091,23 +17056,14 @@ entities:
       nextSound: -1558.1974166
     - type: Physics
       canCollide: False
-- proto: DebugGenerator
+- proto: DebugAPCRecharging
   entities:
-  - uid: 254
-    components:
-    - type: Transform
-      parent: 1
-      pos: 12.5,-20.5
   - uid: 756
     components:
     - type: Transform
       parent: 1
-      pos: 3.5,-3.5
-  - uid: 1514
-    components:
-    - type: Transform
-      parent: 1
-      pos: -2.5,-17.5
+      rot: 1.5707963267948966 rad
+      pos: -3.5,-16.5
 - proto: DebugSMESRecharging
   entities:
   - uid: 283
@@ -17115,6 +17071,13 @@ entities:
     - type: Transform
       parent: 1
       pos: -3.5,-16.5
+- proto: DebugSubstationRecharging
+  entities:
+  - uid: 1697
+    components:
+    - type: Transform
+      parent: 1
+      pos: -3.5,-17.5
 - proto: DefaultStationBeaconBar
   entities:
   - uid: 126
@@ -18359,18 +18322,6 @@ entities:
       parent: 1
       rot: 1.5707963267948966 rad
       pos: 32.5,-26.5
-  - uid: 2523
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5495597879078726 rad
-      pos: -1.9868164,-24.212036
-      anchored: False
-    - type: Physics
-      canCollide: True
-      bodyType: Dynamic
   - uid: 2537
     mapInit: true
     paused: true
@@ -18596,22 +18547,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 16.5,-2.5
-  - uid: 2983
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: -1.5,-23.5
-  - uid: 2985
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: -0.5,-23.5
   - uid: 3012
     mapInit: true
     paused: true
@@ -19650,21 +19585,6 @@ entities:
       nextSound: -1558.1974166
     - type: Physics
       canCollide: False
-- proto: DoorElectronicsCommand
-  entities:
-  - uid: 3118
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3117
-    - type: AccessReader
-      accessListsOriginal:
-      - - Command
-    - type: EmitSoundOnCollide
-      nextSound: -1558.1974166
-    - type: Physics
-      canCollide: False
 - proto: DoorElectronicsHeadOfPersonnel
   entities:
   - uid: 506
@@ -19820,6 +19740,8 @@ entities:
     - type: Transform
       parent: 1
       pos: 7.564087,-34.566895
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: MeleeWeapon
       nextAttack: -1558.1974166
     - type: UseDelay
@@ -19843,6 +19765,8 @@ entities:
     - type: Transform
       parent: 1
       pos: 7.470398,-34.379395
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: MeleeWeapon
       nextAttack: -1558.1974166
     - type: UseDelay
@@ -20494,6 +20418,8 @@ entities:
     components:
     - type: Transform
       parent: 3515
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: MeleeWeapon
       nextAttack: -1558.1974166
     - type: UseDelay
@@ -20518,6 +20444,8 @@ entities:
     components:
     - type: Transform
       parent: 3428
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: MeleeWeapon
       nextAttack: -1558.1974166
     - type: UseDelay
@@ -37763,31 +37691,6 @@ entities:
       nextSound: -1558.1974166
     - type: Physics
       canCollide: False
-- proto: HighSecCommandLocked
-  entities:
-  - uid: 3117
-    mapInit: true
-    paused: true
-    components:
-    - type: MetaData
-      name: Vault
-    - type: Transform
-      parent: 1
-      pos: 2.5,-6.5
-    - type: ContainerContainer
-      containers:
-        board: !type:Container
-          ents:
-          - 3118
-          showEnts: False
-          occludes: True
-    - type: AccessReader
-      accessListsOriginal: []
-    - type: WiresPanelSecurity
-      wiresAccessible: False
-      examine: wires-panel-component-on-examine-security-level5
-    - type: Construction
-      node: maxSecurity
 - proto: HighSecDoor
   entities:
   - uid: 1192
@@ -39259,38 +39162,6 @@ entities:
     - type: DeviceNetwork
       receiveFrequency: 1173
       address: 708E-252B
-- proto: JetpackBlue
-  entities:
-  - uid: 3420
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3418
-    - type: UseDelay
-      delays:
-        gasTank:
-          startTime: 0
-          length: 1
-          endTime: 0
-        default:
-          startTime: 0
-          length: 1
-          endTime: 0
-    - type: Jetpack
-      toggleActionEntity: 3421
-    - type: MeleeWeapon
-      nextAttack: -1558.1974166
-    - type: EmitSoundOnCollide
-      nextSound: -1558.1974166
-    - type: Physics
-      canCollide: False
-    - type: ActionsContainer
-    - type: ContainerContainer
-      containers:
-        actions: !type:Container
-          ents:
-          - 3421
 - proto: JetpackMiniFilled
   entities:
   - uid: 851
@@ -39301,6 +39172,8 @@ entities:
       parent: 1
       rot: 0.0006363391876220703 rad
       pos: 5.435608,-38.481262
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -39330,6 +39203,8 @@ entities:
     - type: Transform
       parent: 1
       pos: 5.5634155,-38.535583
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -40417,39 +40292,11 @@ entities:
           occludes: True
 - proto: LockerFreezerVaultFilled
   entities:
-  - uid: 3418
-    mapInit: true
-    paused: true
+  - uid: 254
     components:
     - type: Transform
       parent: 1
-      pos: 3.5,-5.5000305
-    - type: AccessReader
-      accessListsOriginal:
-      - - Command
-    - type: EntityStorage
-      air:
-        temperature: 293.147
-        volume: 200
-        moles:
-          Oxygen: 1.7459903
-          Nitrogen: 6.568249
-        immutable: False
-    - type: ContainerContainer
-      containers:
-        entity_storage: !type:Container
-          ents:
-          - 3419
-          - 3420
-          - 3422
-          - 3423
-          - 3424
-          showEnts: False
-          occludes: True
-        paper_label: !type:ContainerSlot
-          ent: null
-          showEnts: False
-          occludes: True
+      pos: 3.5,-5.5
 - proto: LockerHeadOfPersonnelFilled
   entities:
   - uid: 2320
@@ -41599,6 +41446,8 @@ entities:
     components:
     - type: Transform
       parent: 532
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -41621,6 +41470,8 @@ entities:
     components:
     - type: Transform
       parent: 565
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -41643,6 +41494,8 @@ entities:
     components:
     - type: Transform
       parent: 591
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -41665,6 +41518,8 @@ entities:
     components:
     - type: Transform
       parent: 615
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -41687,6 +41542,8 @@ entities:
     components:
     - type: Transform
       parent: 634
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -41709,6 +41566,8 @@ entities:
     components:
     - type: Transform
       parent: 658
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -41731,6 +41590,8 @@ entities:
     components:
     - type: Transform
       parent: 3492
+    - type: GasTank
+      nextDirtyTime: -185.7453885
     - type: UseDelay
       delays:
         gasTank:
@@ -41773,7 +41634,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 15.5,-29.50003
+      pos: 15.5,-29.5
 - proto: PaintingSadClown
   entities:
   - uid: 2921
@@ -41782,7 +41643,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 25.499939,-14.5
+      pos: 25.5,-14.5
 - proto: PaintingSaturn
   entities:
   - uid: 3464
@@ -41791,7 +41652,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 6.5,-4.500061
+      pos: 6.5,-4.5
 - proto: Paper
   entities:
   - uid: 348
@@ -49981,7 +49842,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 24.5,-39.50003
+      pos: 24.5,-39.5
 - proto: PosterContrabandEAT
   entities:
   - uid: 1412
@@ -49990,7 +49851,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 24.5,-29.50003
+      pos: 24.5,-29.5
 - proto: PosterContrabandMissingGloves
   entities:
   - uid: 2445
@@ -49999,7 +49860,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 9.5,-18.50003
+      pos: 9.5,-18.5
 - proto: PosterContrabandNuclearDeviceInformational
   entities:
   - uid: 3459
@@ -50008,7 +49869,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 5.499939,-4.5
+      pos: 5.5,-4.5
 - proto: PosterContrabandShamblersJuice
   entities:
   - uid: 2944
@@ -50044,7 +49905,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 12.5,-36.50003
+      pos: 12.5,-36.5
 - proto: PosterLegitHighClassMartini
   entities:
   - uid: 898
@@ -50087,7 +49948,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 9.5,-27.50003
+      pos: 9.5,-27.5
 - proto: PosterLegitMime
   entities:
   - uid: 2936
@@ -50096,7 +49957,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 26.5,-14.5000305
+      pos: 26.5,-14.5
 - proto: PosterLegitNanomichiAd
   entities:
   - uid: 331
@@ -50112,7 +49973,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 2.5,-32.50003
+      pos: 2.5,-32.5
 - proto: PosterLegitNanotrasenLogo
   entities:
   - uid: 2419
@@ -54785,7 +54646,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 14.5,-25.50003
+      pos: 14.5,-25.5
 - proto: SignBridge
   entities:
   - uid: 3461
@@ -54794,7 +54655,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 2.5,-1.5000305
+      pos: 2.5,-1.5
 - proto: SignCryo
   entities:
   - uid: 3513
@@ -54803,7 +54664,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 14.5,-15.5000305
+      pos: 14.5,-15.5
 - proto: SignDirectionalBar
   entities:
   - uid: 2427
@@ -54962,7 +54823,7 @@ entities:
     components:
     - type: Transform
       parent: 1
-      pos: 3.5,-1.5000305
+      pos: 3.5,-1.5
 - proto: SignEVA
   entities:
   - uid: 832
@@ -55242,18 +55103,6 @@ entities:
       parent: 3506
     - type: ContainedSolution
       container: 3506
-- proto: SpaceCash1000
-  entities:
-  - uid: 3422
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3418
-    - type: Physics
-      canCollide: False
-    - type: EmitSoundOnCollide
-      nextSound: -1558.1974166
 - proto: SpawnMobCleanBot
   entities:
   - uid: 2065
@@ -55389,27 +55238,27 @@ entities:
       pos: 27.5,-15.5
 - proto: StandardNanotrasenStation
   entities:
-  - uid: 1699
+  - uid: 1718
     mapInit: true
     components:
     - type: MetaData
-      name: NT14 Bagel Station PR-659
+      name: NT14 Bagel Station NX-564
     - type: StationData
       grids:
       - invalid
       - 1
     - type: StationBankAccount
-      nextIncomeTime: 28.4771044
+      nextIncomeTime: 31.7783538
       accounts:
         Cargo: 2000
-        Engineering: 2020
-        Medical: 2020
-        Science: 2020
-        Security: 2020
-        Service: 2020
+        Engineering: 2160
+        Medical: 2160
+        Science: 2160
+        Security: 2160
+        Service: 2160
     - type: StationCargoBountyDatabase
       totalBounties: 6
-      nextSkipTime: -2882.458021
+      nextSkipTime: -3229.1567716
       bounties:
       - id: NT598
         bounty: BountySyringe
@@ -55576,12 +55425,6 @@ entities:
         StationAi: 1
         Borg: 2
       extendedAccess: True
-    - type: GatewayGenerator
-      nextUnlock: -2582.458021
-      generated:
-      - invalid
-      - invalid
-      - invalid
     - type: StationCentcomm
       shuttleIndex: 12
       mapEntity: invalid
@@ -55591,16 +55434,16 @@ entities:
       emergencyShuttle: invalid
     - type: SalvageMagnetData
       offered:
-      - 1508882880
-      - 549953480
-      - 1936299201
-      - 410046681
-      - 1615878721
-      nextOffer: 128.8763377
+      - 644924040
+      - 107438780
+      - 742871761
+      - 822776241
+      - 1582197761
+      nextOffer: 142.2154755
     - type: SalvageExpeditionData
-      nextOffer: 27.5419789
+      nextOffer: 10.8432283
     - type: CargoDeliveryData
-      nextDelivery: 0.4335096
+      nextDelivery: 26.1675579
     - type: StationNameSetup
       mapNameTemplate: '{0} Bagel Station {1}'
       nameGenerator: !type:NanotrasenNameGenerator
@@ -55831,8 +55674,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 11.5,-19.5
-    - type: Battery
-      lastUpdate: -681.0316271
     - type: ContainerContainer
       containers:
         machine_board: !type:Container
@@ -55848,6 +55689,8 @@ entities:
           - 2223
           showEnts: False
           occludes: True
+    - type: BatterySelfRecharger
+      autoRechargeRate: 2500000
   - uid: 3221
     mapInit: true
     paused: true
@@ -55857,8 +55700,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 3.5,-2.5
-    - type: Battery
-      lastUpdate: -432.4318757
     - type: ContainerContainer
       containers:
         machine_board: !type:Container
@@ -55874,6 +55715,8 @@ entities:
           - 3226
           showEnts: False
           occludes: True
+    - type: BatterySelfRecharger
+      autoRechargeRate: 2500000
 - proto: SubstationMachineCircuitboard
   entities:
   - uid: 2219
@@ -57674,6 +57517,13 @@ entities:
         quickInsert:
           length: 0.5
         storage: {}
+- proto: VendingMachineTheater
+  entities:
+  - uid: 1482
+    components:
+    - type: Transform
+      parent: 1
+      pos: 19.5,-11.5
 - proto: ViolinInstrument
   entities:
   - uid: 2923
@@ -60802,26 +60652,6 @@ entities:
     - type: Battery
       lastUpdate: -1247.2622911
       lastCharge: 1000
-    - type: EmitSoundOnCollide
-      nextSound: -1558.1974166
-    - type: Physics
-      canCollide: False
-- proto: WeaponRevolverDeckard
-  entities:
-  - uid: 3419
-    mapInit: true
-    paused: true
-    components:
-    - type: Transform
-      parent: 3418
-    - type: Gun
-      nextFire: -1558.1974166
-    - type: UseDelay
-      delays:
-        default:
-          startTime: 0
-          length: 0.66
-          endTime: 0
     - type: EmitSoundOnCollide
       nextSound: -1558.1974166
     - type: Physics

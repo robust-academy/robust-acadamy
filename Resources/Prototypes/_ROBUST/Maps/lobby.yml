@@ -1,7 +1,7 @@
 - type: gameMap
   id: lobby
   mapName: 'lobby'
-  mapPath: /Maps/_ROBUST/lobbyNew.yml
+  mapPath: /Maps/_ROBUST/Maps/lobbyNew.yml
   minPlayers: 0
   stations:
     lobby:
