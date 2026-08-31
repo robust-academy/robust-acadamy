@@ -1,6 +1,6 @@
 - type: matchMap
   id: BoxVaultMap
-  mapName: "Bagel (Vault)"
+  mapName: "Box (Vault)"
   mapPath: "Maps/_ROBUST/Grids/BoxVault.yml" # todo: change this yaml path
 
 - type: matchMap
@@ -10,7 +10,7 @@
 
 - type: matchMap
   id: SkibidiMap
-  mapName: "Skibidi map"
+  mapName: "Skibidi (Bagel vault) map"
   mapPath: "Maps/_ROBUST/Grids/skibidPOWER.yml"
 
 - type: matchMap
