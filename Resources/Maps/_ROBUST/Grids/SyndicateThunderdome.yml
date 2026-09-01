@@ -4,8 +4,8 @@ meta:
   engineVersion: 283.1.0
   forkId: ""
   forkVersion: ""
-  time: 09/01/2026 16:25:49
-  entityCount: 1296
+  time: 09/01/2026 16:56:41
+  entityCount: 1298
 maps: []
 grids:
 - 1
@@ -5817,6 +5817,29 @@ entities:
       parent: 1
       rot: -1.5707963267948966 rad
       pos: 16.5,1.5
+    - type: EntityTableSpawner
+      table: !type:NestedSelector
+        tableId: NukeOpsAmmoTable
+        weight: 1
+        rolls: !type:RangeNumberSelector
+          range: 1,1
+        requireAll: True
+        prob: 1
+        conditions: []
+  - uid: 1298
+    components:
+    - type: Transform
+      parent: 1
+      pos: 13.5,10.5
+    - type: EntityTableSpawner
+      table: !type:NestedSelector
+        tableId: NukeOpsAmmoTable
+        weight: 1
+        rolls: !type:RangeNumberSelector
+          range: 1,1
+        requireAll: True
+        prob: 1
+        conditions: []
 - proto: NukeOpsGrenadeSpawner
   entities:
   - uid: 873
@@ -5824,11 +5847,29 @@ entities:
     - type: Transform
       parent: 1
       pos: 5.5,-12.5
+    - type: EntityTableSpawner
+      table: !type:NestedSelector
+        tableId: NukeOpsGrenadeTable
+        weight: 1
+        rolls: !type:RangeNumberSelector
+          range: 1,1
+        requireAll: True
+        prob: 1
+        conditions: []
   - uid: 874
     components:
     - type: Transform
       parent: 1
       pos: 21.5,-7.5
+    - type: EntityTableSpawner
+      table: !type:NestedSelector
+        tableId: NukeOpsGrenadeTable
+        weight: 1
+        rolls: !type:RangeNumberSelector
+          range: 1,1
+        requireAll: True
+        prob: 1
+        conditions: []
 - proto: NukeOpsLootSpawner
   entities:
   - uid: 875
@@ -5841,6 +5882,11 @@ entities:
     - type: Transform
       parent: 1
       pos: 19.5,-0.5
+  - uid: 1297
+    components:
+    - type: Transform
+      parent: 1
+      pos: 4.5,10.5
 - proto: NukeOpsMedkitBruteSpawner
   entities:
   - uid: 877
