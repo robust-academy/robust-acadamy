@@ -7,3 +7,5 @@
   components:
   - type: Lock
     locked: true
+  - type: Physics
+    canCollide: True # Otherwise it being set to false overrides barrier lock status (even though it probably shouldn't)
