@@ -4,8 +4,8 @@ meta:
   engineVersion: 283.1.0
   forkId: ""
   forkVersion: ""
-  time: 08/31/2026 11:56:45
-  entityCount: 1286
+  time: 09/01/2026 16:25:49
+  entityCount: 1296
 maps: []
 grids:
 - 1
@@ -1102,6 +1102,17 @@ entities:
     - type: Transform
       parent: 1
       pos: 6.5,-19.5
+  - uid: 1295
+    components:
+    - type: Transform
+      parent: 1
+      pos: 15.5,-12.5
+  - uid: 1296
+    components:
+    - type: Transform
+      parent: 1
+      rot: 1.5707963267948966 rad
+      pos: 7.5,-25.5
 - proto: ArrowImprovised
   entities:
   - uid: 37
@@ -1706,6 +1717,46 @@ entities:
     - type: Transform
       parent: 1
       pos: 5.5,10.5
+  - uid: 1287
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-16.5
+  - uid: 1288
+    components:
+    - type: Transform
+      parent: 1
+      pos: 17.5,-16.5
+  - uid: 1289
+    components:
+    - type: Transform
+      parent: 1
+      pos: 16.5,-16.5
+  - uid: 1290
+    components:
+    - type: Transform
+      parent: 1
+      pos: 15.5,-16.5
+  - uid: 1291
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-16.5
+  - uid: 1292
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-15.5
+  - uid: 1293
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-14.5
+  - uid: 1294
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-13.5
 - proto: CableHVUncuttable
   entities:
   - uid: 149
