@@ -16,7 +16,12 @@
 - type: matchMap
   id: SyndicateThunderdomeMap
   mapName: "Syndicate Thunderdome"
-  mappath: "Maps/_ROBUST/Grids/SyndicateThunderdome.yml"
+  mapPath: "Maps/_ROBUST/Grids/SyndicateThunderdome.yml"
+
+- type: matchMap
+  id: OldArenaMap
+  mapName: "Old Arena"
+  mapPath: "Maps/_ROBUST/Grids/OldArena.yml"
 
 - type: mapPack
   id: DefaultMaps
@@ -25,3 +30,4 @@
   - OldBridgeDMMap
   - SkibidiMap
   - SyndicateThunderdomeMap
+  - OldArenaMap
