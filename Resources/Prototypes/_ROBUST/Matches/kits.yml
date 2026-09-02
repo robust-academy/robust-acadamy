@@ -180,17 +180,17 @@
           weight: 0.65
           amount: !type:RangeNumberSelector
             range: 1, 2
-      # spears
-      - !type:GroupSelector
-        children:
-        - id: SpearPlasma
-        - id: SpearReinforced
-        - id: Spear
-        - id: SpearUranium
-        weight: 0.25
       # weapon
       - !type:GroupSelector
         children:
+      # spears
+        - !type:GroupSelector
+          children:
+          - id: SpearPlasma
+          - id: SpearReinforced
+          - id: Spear
+          - id: SpearUranium
+          weight: 1.25
         - id: CaptainSabre
         - id: EnergySword
         - id: ClothingHandsGlovesNorthStar
