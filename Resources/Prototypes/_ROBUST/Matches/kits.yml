@@ -76,8 +76,6 @@
           weight: 0.3
           amount: !type:RangeNumberSelector
             range: 3, 7
-        amount: !type:RangeNumberSelector
-          range: 1, 2
         weight: 5.5
 
     - !type:AllSelector
