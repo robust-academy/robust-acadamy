@@ -4,9 +4,9 @@
   mapPath: "Maps/_ROBUST/Grids/BoxVault.yml" # todo: change this yaml path
 
 - type: matchMap
-  id: OldBridgeDMMap
-  mapName: "Old Bridge DM"
-  mapPath: "Maps/_ROBUST/Grids/OldBrigeDM.yml"
+  id: OldBrigDMMap
+  mapName: "Old Brig DM"
+  mapPath: "Maps/_ROBUST/Grids/OldBrigDM.yml"
 
 - type: matchMap
   id: SkibidiMap
