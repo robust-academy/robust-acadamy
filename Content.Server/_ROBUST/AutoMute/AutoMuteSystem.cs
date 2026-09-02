@@ -100,14 +100,18 @@ public sealed partial class AutoMuteSystem : EntitySystem
     {
         muteTime = null;
         var messageLower = argsMessage.ToLower();
+        var wordsInMessage = messageLower.Split(" ");
 
-        foreach (var word in BannedWords)
+        foreach (var bannedWord in BannedWords)
         {
-            if (!messageLower.Contains(word.Word))
-                continue;
+            foreach (var word in wordsInMessage)
+            {
+                if (word != bannedWord.Word)
+                    continue;
 
-            muteTime = word.MuteTime;
-            return true;
+                muteTime = bannedWord.MuteTime;
+                return true;
+            }
         }
 
         return false;
@@ -115,7 +119,7 @@ public sealed partial class AutoMuteSystem : EntitySystem
 
     private async void ApplyMute(ICommonSession session, string message, TimeSpan muteTime)
     {
-        var muteMessage = $"{NoteMutedTag}\nMuted for {message}";
+        var muteMessage = $"{NoteMutedTag}\nMuted for message:\n\"{message}\"\nAppeal on discord.";
 
         var severity = NoteSeverity.Medium;
 
