@@ -1,0 +1,5 @@
+
+- type: reagent
+  parent: SpaceGlue
+  id: SpaceGlueTactical
+  evaporationSpeed: 0.2

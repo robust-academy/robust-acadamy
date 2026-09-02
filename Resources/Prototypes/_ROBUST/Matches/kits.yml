@@ -298,6 +298,9 @@
         - id: GrenadeFlashBang
         - id: GrenadeShrapnel
         - id: GrenadeStinger
+        - id: GlueGrenade
+        - id: TearGasGrenade
+        - id: EmpGrenade
         - id: DrinkWaterBottleFull
         - id: GrenadeIncendiary
         - id: ClusterBananaPeel
@@ -315,6 +318,8 @@
           weight: 1.5
         - id: SyndieMiniBomb
           weight: 0.7
+        - id: LubeGrenade
+          weight: 0.5
         - id: PenExplodingBox
           weight: 0.7
         - id: PipeBomb
