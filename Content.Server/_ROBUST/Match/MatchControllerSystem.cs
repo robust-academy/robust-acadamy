@@ -4,6 +4,7 @@ using Content.Server.GameTicking;
 using Content.Shared._ROBUST.Match;
 using Content.Shared.GameTicking;
 using Content.Shared.Ghost;
+using Content.Shared.Ghost.Components;
 using Content.Shared.Verbs;
 using Robust.Server.Player;
 using Robust.Shared.Network;

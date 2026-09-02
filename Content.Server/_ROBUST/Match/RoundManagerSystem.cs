@@ -2,6 +2,7 @@ using System.Linq;
 using Content.Server._ROBUST.DebugSystem;
 using Content.Shared._ROBUST.Match;
 using Content.Shared.Ghost;
+using Content.Shared.Ghost.Components;
 using Content.Shared.Mobs;
 using Content.Shared.Mobs.Systems;
 using Robust.Shared.Network;
