@@ -34,6 +34,9 @@ public sealed partial class AutoMuteSystem : EntitySystem
 
         foreach (var word in allWords)
         {
+            // sus
+            if (word == "")
+                continue;
             var split = (word.Split("|")[0].ToLower(), TimeSpan.FromMinutes(int.Parse(word.Split("|")[1])));
             BannedWords.Add(split);
             BannedWords.Add((split.Item1 + "s", split.Item2)); // sussy hardcode!

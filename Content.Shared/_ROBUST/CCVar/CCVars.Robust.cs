@@ -3,7 +3,7 @@ using Robust.Shared.Configuration;
 namespace Content.Shared._ROBUST.CCVar;
 
 [CVarDefs]
-public partial class RobustCCVars
+public sealed partial class RobustCCVars
 {
     // format:
     // SERVERNAME|IPADDRESS,SERVERNAME|IPADDRESS|PORT
@@ -12,4 +12,8 @@ public partial class RobustCCVars
 
     public static readonly CVarDef<string> ServerName =
         CVarDef.Create("multi_server.server_name", "", CVar.REPLICATED);
+
+    // format: WORD|MUTE_TIME(in minutes),WORD|MUTE_TIME(in minutes),...
+    public static readonly CVarDef<string> BannedWords =
+        CVarDef.Create("word_bans.banned_words", "", CVar.REPLICATED);
 }
