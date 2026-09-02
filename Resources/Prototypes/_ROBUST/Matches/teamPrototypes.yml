@@ -11,7 +11,7 @@
   teamIcon: RedTeamIcon
 
 - type: team
-  id: RedTeam
+  id: GreenTeam
   teamName: "Green Team"
   teamColor: red
   teamIcon: GreenTeamIcon
