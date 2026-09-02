@@ -1,0 +1,81 @@
+- type: entity
+  parent: [ BaseWall, StructureHealthWallStrong ]
+  id: WallReinforcedIndestructible
+  name: reinforced wall
+  description: It seems to be indestructible to conventional means.
+  suffix: indestructible
+  components:
+  - type: Sprite
+    sprite: Structures/Walls/solid.rsi
+  - type: Icon
+    sprite: Structures/Walls/solid.rsi
+    state: rgeneric
+  - type: Construction
+    graph: Girder
+    node: reinforcedWall
+  - type: Damageable
+    damageModifierSet: PlasteelStaticMod
+  - type: IconSmooth
+    key: walls
+    base: reinf_over
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ReinforcedWallVisuals.DeconstructionStage:
+        ReinforcedWallVisualLayers.Deconstruction:
+          -1: { visible: false }
+          0: { state: reinf_construct-0, visible: true}
+          1: { state: reinf_construct-1, visible: true}
+          2: { state: reinf_construct-2, visible: true}
+          3: { state: reinf_construct-3, visible: true}
+          4: { state: reinf_construct-4, visible: true}
+          5: { state: reinf_construct-5, visible: true}
+  - type: ReinforcedWallReplacementMarker
+  - type: StaticPrice
+    price: 250
+  - type: RadiationBlocker
+    resistance: 5
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        mask:
+        - FullTileMask
+        layer:
+        - WallLayer
+        density: 2000
+
+- type: entity
+  parent: [BaseWindowStructure, StructureHealthBarrierStrong]
+  id: ReinforcedWindowIndestructible
+  name: reinforced window
+  description: It seems to be indestructible to conventional means.
+  suffix: indestructible
+  components:
+  - type: Sprite
+    sprite: Structures/Windows/window-base-reinf.rsi
+  - type: Icon
+    sprite: Structures/Windows/window-base-reinf.rsi
+    state: full
+  - type: Repairable
+    fuelCost: 10
+    doAfterDelay: 2
+  - type: Damageable
+    damageModifierSet: GlassReinforcedMod
+  - type: IconSmooth
+    base: rwindow
+  - type: Construction
+    graph: Window
+    node: reinforcedWindow
+  - type: Appearance
+  - type: DamageVisuals
+    thresholds: [5, 10, 20]
+    damageDivisor: 3
+    trackAllDamage: true
+    damageOverlay:
+      sprite: Structures/Windows/cracks.rsi
+
+
+
