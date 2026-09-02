@@ -82,6 +82,27 @@
 
     - !type:AllSelector
       children:
+      - !type:GroupSelector
+        children:
+        - id: BowImprovised
+      - !type:GroupSelector
+        children:
+        - id: ArrowImprovisedPlasma
+          amount: !type:RangeNumberSelector
+            range: 7, 10
+        - id: ArrowImprovisedUranium
+          amount: !type:RangeNumberSelector
+            range: 7, 10
+        - id: ArrowRegular
+          amount: !type:RangeNumberSelector
+            range: 7, 10
+        - id: ArrowImprovised
+          amount: !type:RangeNumberSelector
+            range: 7, 10
+        weight: 1.25
+
+    - !type:AllSelector
+      children:
       - id: WeaponPistolViper
       - id: MagazinePistolHighCapacity
         amount: !type:RangeNumberSelector
@@ -125,6 +146,11 @@
       - id: WeaponSniperHristov
       - id: MagazineBoxAntiMateriel
 
+    - !type:AllSelector
+      children:
+      - id: WeaponSniperMosin
+      - id: MagazineBoxLightRifle
+
     - id: WeaponEnergyShotgun
       weight: 0.6
     - id: WeaponAntiqueLaser
@@ -156,14 +182,30 @@
           weight: 0.65
           amount: !type:RangeNumberSelector
             range: 1, 2
+      # spears
+      - !type:GroupSelector
+        children:
+        - id: SpearPlasma
+        - id: SpearReinforced
+        - id: Spear
+        - id: SpearUranium
+        weight: 0.25
       # weapon
       - !type:GroupSelector
         children:
         - id: CaptainSabre
         - id: EnergySword
         - id: ClothingHandsGlovesNorthStar
+        - id: ClothingHandsGlovesBoxingRiggedGreen
+          weight: 0.6
+        - id: Claymore
+        - id: FireAxe
+        - id: FireAxeFlaming
+          weight: 0.5
         - id: Truncheon
           weight: 1.5
+        - id: ToolboxSyndicate
+          weight: 1.25
       weight: 5.5
 
 - type: entityTable
@@ -234,6 +276,9 @@
       - id: ClothingOuterArmorCaptainCarapace
         weight: 0.45
 
+      - id: ClothingBackpackHarmpack
+        weight: 0.6
+
       # sec armor
       - !type:GroupSelector
         children:
@@ -292,12 +337,17 @@
         - id: ScramImplanter
           weight: 1.5
         - id: WeaponFlareGun
+        - id: ChameleonProjector
         rolls: 0, 1
       - !type:GroupSelector
         children:
         - id: GrenadeFlashBang
         - id: GrenadeShrapnel
         - id: GrenadeStinger
+        - id: EmpGrenade
+        - id: SmokeGrenade
+        - id: TearGasGrenade
+        - id: CleanerGrenade
         - id: DrinkWaterBottleFull
         - id: GrenadeIncendiary
         - id: ClusterBananaPeel
