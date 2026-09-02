@@ -11,9 +11,9 @@ public sealed partial class MatchMapPrototype : IPrototype
     public string ID { get; private set; } = string.Empty;
 
     // todo turn into loc id
-    [DataField]
+    [DataField(required: true)]
     public string MapName = string.Empty;
 
-    [DataField]
+    [DataField(required: true)]
     public string MapPath = string.Empty;
 }
