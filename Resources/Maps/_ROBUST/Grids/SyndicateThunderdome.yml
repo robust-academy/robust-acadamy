@@ -1,21 +1,30 @@
 meta:
   format: 7
   category: Grid
-  engineVersion: 283.1.0
+  engineVersion: 289.0.2
   forkId: ""
   forkVersion: ""
-  time: 09/01/2026 16:56:41
-  entityCount: 1298
+  time: 09/02/2026 13:41:12
+  entityCount: 1292
 maps: []
 grids:
 - 1
 orphans:
 - 1
-nullspace: []
+nullspace:
+- 1302
+- 1303
+- 1304
+- 1305
+- 1306
+- 1307
+- 1308
+- 1309
+- 1310
 tilemap:
   1: Space
   2: FloorDarkMono
-  3: FloorRockVault
+  3: FloorSteel
   0: Plating
 entities:
 - proto: ""
@@ -39,7 +48,7 @@ entities:
           version: 7
         1,-1:
           ind: 1,-1
-          tiles: AgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAA==
+          tiles: AgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAACAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAgAAAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAgAAAAAAAAIAAAAAAAACAAAAAAAAAgAAAAAAAAIAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAAEAAAAAAAABAAAAAAAAAQAAAAAAAA==
           version: 7
         0,-2:
           ind: 0,-2
@@ -85,352 +94,6 @@ entities:
     - type: Gravity
       gravityShakeSound: !type:SoundPathSpecifier
         path: /Audio/Effects/alert.ogg
-    - type: DecalGrid
-      chunkCollection:
-        version: 2
-        nodes:
-        - node:
-            id: BrickTileDarkCornerNe
-            color: '#FFFFFFFF'
-          decals:
-            72: 11,-4
-            73: 12,-8
-            74: 13,-12
-            78: 10,4
-            204: 1,7
-            249: 17,7
-        - node:
-            id: BrickTileDarkCornerNe
-            color: '#FFFFFFFF'
-            angle: 1.5707963267948966 rad
-          decals:
-            187: 1,-19
-        - node:
-            id: BrickTileDarkCornerNw
-            color: '#FFFFFFFF'
-          decals:
-            105: 6,4
-            250: 3,7
-        - node:
-            id: BrickTileDarkCornerSe
-            color: '#FFFFFFFF'
-          decals:
-            51: 13,-19
-            201: 1,4
-            215: 1,10
-        - node:
-            id: BrickTileDarkCornerSe
-            color: '#FFFFFFFF'
-            angle: 1.5707963267948966 rad
-          decals:
-            188: 2,-19
-        - node:
-            id: BrickTileDarkCornerSw
-            color: '#FFFFFFFF'
-          decals:
-            79: 6,-6
-            80: 7,-10
-            81: 8,-14
-            83: 9,-19
-            251: 3,4
-        - node:
-            id: BrickTileDarkInnerNe
-            color: '#FFFFFFFF'
-          decals:
-            75: 12,-12
-            76: 11,-8
-            77: 10,-4
-            206: -1,7
-            267: 17,6
-        - node:
-            id: BrickTileDarkInnerSw
-            color: '#FFFFFFFF'
-          decals:
-            145: 9,-14
-            146: 7,-6
-        - node:
-            id: BrickTileDarkLineE
-            color: '#FFFFFFFF'
-          decals:
-            52: 13,-18
-            53: 13,-17
-            54: 13,-16
-            55: 13,-15
-            56: 13,-14
-            57: 13,-13
-            58: 12,-11
-            59: 12,-10
-            60: 12,-9
-            61: 11,-7
-            62: 11,-6
-            63: 11,-5
-            64: 10,-3
-            65: 10,-2
-            66: 10,-1
-            67: 10,0
-            68: 10,1
-            69: 10,2
-            70: 10,3
-            202: 1,5
-            203: 1,6
-        - node:
-            id: BrickTileDarkLineN
-            color: '#FFFFFFFF'
-          decals:
-            118: 1,-1
-            119: 2,-1
-            120: 3,-1
-            121: 1,-14
-            122: 2,-14
-            123: 3,-14
-            124: 2,-5
-            138: 19,-19
-            205: 0,7
-            210: 18,6
-            254: 4,7
-            255: 5,7
-            256: 6,7
-            257: 7,7
-            258: 9,7
-            259: 8,7
-            260: 10,7
-            261: 12,7
-            262: 11,7
-            263: 13,7
-            264: 14,7
-            265: 15,7
-            266: 16,7
-        - node:
-            id: BrickTileDarkLineS
-            color: '#FFFFFFFF'
-          decals:
-            106: -1,4
-            107: 0,4
-            111: 2,-10
-            112: 1,-14
-            113: 2,-14
-            114: 3,-14
-            115: 1,-1
-            116: 2,-1
-            117: 3,-1
-            139: 14,4
-            140: 15,4
-            141: 16,4
-            144: 19,4
-            207: 17,4
-            208: 18,4
-            217: 14,11
-            218: 15,11
-            219: 16,11
-            220: 5,11
-            221: 6,11
-            222: 7,11
-            223: 8,11
-        - node:
-            id: BrickTileDarkLineW
-            color: '#FFFFFFFF'
-          decals:
-            86: 9,-18
-            87: 9,-17
-            88: 9,-16
-            89: 9,-15
-            90: 8,-13
-            91: 8,-12
-            92: 8,-11
-            93: 7,-9
-            94: 7,-8
-            95: 7,-7
-            96: 6,-5
-            97: 6,-4
-            98: 6,-3
-            99: 6,-2
-            100: 6,3
-            101: 6,2
-            102: 6,1
-            103: 6,0
-            104: 6,-1
-            125: 21,0
-            126: 21,-1
-            127: 21,2
-            128: 21,-3
-            129: 21,-4
-            130: 21,-8
-            131: 21,-9
-            132: 21,-10
-            133: 21,-14
-            134: 21,-15
-            135: 21,-16
-            136: 21,-17
-            216: 19,9
-            252: 3,5
-            253: 3,6
-        - node:
-            id: Remains
-            color: '#FFFFFFFF'
-          decals:
-            147: 17.073431,-6.9681454
-            148: 15.042181,-8.95252
-            149: 16.042181,-9.968145
-        - node:
-            id: WarnCornerNE
-            color: '#FFFFFFFF'
-          decals:
-            231: 19,9
-        - node:
-            id: WarnCornerNW
-            color: '#FFFFFFFF'
-          decals:
-            232: 1,10
-        - node:
-            id: WarnCornerSW
-            color: '#FFFFFFFF'
-          decals:
-            189: -1,7
-        - node:
-            id: WarnCornerSmallNE
-            color: '#FFFFFFFF'
-          decals:
-            199: 18,4
-            247: 3,4
-        - node:
-            id: WarnCornerSmallNW
-            color: '#FFFFFFFF'
-          decals:
-            194: 1,4
-            200: 17,4
-        - node:
-            id: WarnCornerSmallSE
-            color: '#FFFFFFFF'
-          decals:
-            214: 18,7
-            246: 3,7
-        - node:
-            id: WarnCornerSmallSW
-            color: '#FFFFFFFF'
-          decals:
-            193: 1,7
-            213: 17,7
-        - node:
-            id: WarnLineE
-            color: '#FFFFFFFF'
-          decals:
-            8: 21,-10
-            9: 21,-9
-            10: 21,-8
-            11: 21,-4
-            12: 21,-3
-            13: 21,-14
-            14: 21,-15
-            17: 21,-17
-            18: 21,-16
-            19: 21,2
-            198: 18,5
-            211: 18,6
-            244: 3,6
-            245: 3,5
-        - node:
-            id: WarnLineN
-            color: '#FFFFFFFF'
-          decals:
-            190: 0,7
-            233: 4,7
-            234: 5,7
-            235: 6,7
-            236: 7,7
-            237: 8,7
-            238: 10,7
-            239: 11,7
-            240: 12,7
-            241: 14,7
-            242: 15,7
-            243: 16,7
-        - node:
-            id: WarnLineS
-            color: '#FFFFFFFF'
-          decals:
-            31: -2,3
-            33: -2,1
-            35: -2,-5
-            36: -2,-3
-            38: -2,-6
-            39: -2,-7
-            40: -2,-9
-            41: -2,-8
-            42: -2,-10
-            46: -2,-16
-            47: -2,-17
-            177: -2,-11
-            178: -2,-12
-            179: -2,-4
-            180: -2,2
-            191: 1,6
-            192: 1,5
-            196: 17,5
-            248: 17,6
-        - node:
-            id: WarnLineW
-            color: '#FFFFFFFF'
-          decals:
-            20: 14,4
-            21: 15,4
-            22: 16,4
-            25: 19,4
-            26: -1,4
-            27: 0,4
-            224: 5,11
-            225: 6,11
-            226: 7,11
-            227: 8,11
-            228: 14,11
-            229: 15,11
-            230: 16,11
-        - node:
-            id: burnt1
-            color: '#FFFFFFFF'
-            angle: 1.5707963267948966 rad
-          decals:
-            162: -2,-7
-            163: -2,-8
-            164: 13,-5
-            165: 13,-6
-            166: 12,-6
-            167: 0,1
-            171: 16,0
-        - node:
-            id: burnt2
-            color: '#FFFFFFFF'
-            angle: 1.5707963267948966 rad
-          decals:
-            159: 3,-11
-            168: 5,2
-            172: 17,0
-        - node:
-            id: burnt3
-            color: '#FFFFFFFF'
-            angle: 1.5707963267948966 rad
-          decals:
-            161: 4,-11
-            169: 12,0
-            170: 12,-1
-        - node:
-            id: burnt4
-            color: '#FFFFFFFF'
-            angle: 1.5707963267948966 rad
-          decals:
-            160: 4,-12
-            173: 20,-6
-            174: 18,-15
-        - node:
-            id: thinline
-            color: '#2B0000FF'
-            angle: 1.5707963267948966 rad
-          decals:
-            181: -2.0038545,-11.737322
-            182: -1.9726045,-12.002947
-            183: -1.9726045,-3.8935714
-            184: -2.0038545,-4.3154464
-            185: -2.0038545,2.1601014
-            186: -1.9413545,1.7851014
     - type: GridAtmosphere
       version: 2
       data:
@@ -568,6 +231,10 @@ entities:
             0: 3822
           6,-3:
             1: 2
+            0: 8704
+          6,-2:
+            0: 34
+            1: 8192
           6,-5:
             0: 57344
           0,-7:
@@ -612,326 +279,43 @@ entities:
       flags: HideLabel
     - type: ExplosionAirtightGrid
     - type: RadiationGridResistance
-- proto: AirAlarm
+    - type: ChunkContainer
+      chunkEntities:
+      - 1302
+      - 1303
+      - 1304
+      - 1305
+      - 1306
+      - 1307
+      - 1308
+      - 1309
+      - 1310
+- proto: Airlock
   entities:
   - uid: 2
     components:
     - type: Transform
       parent: 1
-      rot: 1.5707963267948966 rad
-      pos: 24.5,-11.5
-    - type: DeviceList
-      devices:
-      - 5
+      pos: 26.5,-13.5
     - type: DeviceLinkSource
       linkedPorts:
-        303:
-        - - AirDanger
-          - Forward
-        302:
-        - - AirDanger
-          - Forward
-        301:
-        - - AirDanger
-          - Forward
-        300:
-        - - AirDanger
-          - Forward
-        299:
-        - - AirDanger
-          - Forward
-        298:
-        - - AirDanger
-          - Forward
-        281:
-        - - AirDanger
-          - Forward
-        270:
-        - - AirDanger
-          - Forward
-        279:
-        - - AirDanger
-          - Forward
-        272:
-        - - AirDanger
-          - Forward
-        273:
-        - - AirDanger
-          - Forward
-        287:
-        - - AirDanger
-          - Forward
-        288:
-        - - AirDanger
-          - Forward
-        292:
-        - - AirDanger
-          - Forward
-        282:
-        - - AirDanger
-          - Forward
-        274:
-        - - AirDanger
-          - Forward
-        283:
-        - - AirDanger
-          - Forward
-        275:
-        - - AirDanger
-          - Forward
-        276:
-        - - AirDanger
-          - Forward
-        304:
-        - - AirDanger
-          - Forward
-        294:
-        - - AirDanger
-          - Forward
-        305:
-        - - AirDanger
-          - Forward
-        293:
-        - - AirDanger
-          - Forward
-        291:
-        - - AirDanger
-          - Forward
-        284:
-        - - AirDanger
-          - Forward
-        295:
-        - - AirDanger
-          - Forward
-        296:
-        - - AirDanger
-          - Forward
-        297:
-        - - AirDanger
-          - Forward
-        280:
-        - - AirDanger
-          - Forward
-        278:
-        - - AirDanger
-          - Forward
-        308:
-        - - AirDanger
-          - Forward
-        307:
-        - - AirDanger
-          - Forward
-        306:
-        - - AirDanger
-          - Forward
-        258:
-        - - AirDanger
-          - Forward
-        259:
-        - - AirDanger
-          - Forward
-        261:
-        - - AirDanger
-          - Forward
-        260:
-        - - AirDanger
-          - Forward
-        262:
-        - - AirDanger
-          - Forward
-        265:
-        - - AirDanger
-          - Forward
-        263:
-        - - AirDanger
-          - Forward
-        264:
-        - - AirDanger
-          - Forward
-        266:
-        - - AirDanger
-          - Forward
-        267:
-        - - AirDanger
-          - Forward
-        268:
-        - - AirDanger
-          - Forward
-        290:
-        - - AirDanger
-          - Forward
-        289:
-        - - AirDanger
-          - Forward
-        286:
-        - - AirDanger
-          - Forward
-        285:
-        - - AirDanger
-          - Forward
-        269:
-        - - AirDanger
-          - Forward
-        271:
-        - - AirDanger
-          - Forward
-        277:
-        - - AirDanger
-          - Forward
-        318:
-        - - AirDanger
-          - Forward
-  - uid: 3
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 26.5,-4.5
-    - type: DeviceList
-      devices:
-      - 5
-    - type: DeviceLinkSource
-      linkedPorts:
-        337:
-        - - AirDanger
-          - Forward
-        338:
-        - - AirDanger
-          - Forward
-        339:
-        - - AirDanger
-          - Forward
-        340:
-        - - AirDanger
-          - Forward
-        341:
-        - - AirDanger
-          - Forward
-        342:
-        - - AirDanger
-          - Forward
-        343:
-        - - AirDanger
-          - Forward
-        344:
-        - - AirDanger
-          - Forward
-        345:
-        - - AirDanger
-          - Forward
-        333:
-        - - AirDanger
-          - Forward
-        346:
-        - - AirDanger
-          - Forward
-        332:
-        - - AirDanger
-          - Forward
-        334:
-        - - AirDanger
-          - Forward
-        335:
-        - - AirDanger
-          - Forward
-        336:
-        - - AirDanger
-          - Forward
-        331:
-        - - AirDanger
-          - Forward
-        330:
-        - - AirDanger
-          - Forward
-        309:
-        - - AirDanger
-          - Forward
-        313:
-        - - AirDanger
-          - Forward
-        310:
-        - - AirDanger
-          - Forward
-        311:
-        - - AirDanger
-          - Forward
-        314:
-        - - AirDanger
-          - Forward
-        312:
-        - - AirDanger
-          - Forward
-        317:
-        - - AirDanger
-          - Forward
-        316:
-        - - AirDanger
-          - Forward
-        315:
-        - - AirDanger
-          - Forward
-        329:
-        - - AirDanger
-          - Forward
-        328:
-        - - AirDanger
-          - Forward
-        327:
-        - - AirDanger
-          - Forward
-        326:
-        - - AirDanger
-          - Forward
-        325:
-        - - AirDanger
-          - Forward
-        324:
-        - - AirDanger
-          - Forward
-        323:
-        - - AirDanger
-          - Forward
-        322:
-        - - AirDanger
-          - Forward
-        321:
-        - - AirDanger
-          - Forward
-        320:
-        - - AirDanger
-          - Forward
-        319:
-        - - AirDanger
-          - Forward
-        318:
-        - - AirDanger
-          - Forward
-        258:
-        - - AirDanger
-          - Forward
-- proto: AirlockHatch
-  entities:
+        45:
+        - - DoorStatus
+          - Input
+        3:
+        - - DoorStatus
+          - Input
+      lastSignals:
+        DoorStatus: True
+    - type: Door
+      state: Opening
+      secondsUntilStateChange: -1705.2665
   - uid: 4
     components:
     - type: Transform
       parent: 1
+      rot: 1.5707963267948966 rad
       pos: 14.5,-13.5
-    missingComponents:
-    - ApcPowerReceiver
-- proto: AirSensor
-  entities:
-  - uid: 5
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: 25.5,-4.5
-    - type: DeviceNetwork
-      deviceLists:
-      - 3
-      - 2
-      configurators:
-      - invalid
 - proto: AlwaysPoweredWallLight
   entities:
   - uid: 6
@@ -1143,6 +527,11 @@ entities:
       pos: 20.482887,-5.1818347
 - proto: ArrowImprovisedPlasma
   entities:
+  - uid: 5
+    components:
+    - type: Transform
+      parent: 1
+      pos: 13.903873,-8.41613
   - uid: 41
     components:
     - type: Transform
@@ -1169,14 +558,6 @@ entities:
       parent: 1
       rot: 1.5707963267948966 rad
       pos: 17.514137,-8.552877
-- proto: AtmosFixInstantPlasmaFireMarker
-  entities:
-  - uid: 45
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: 25.5,-4.5
 - proto: Barricade
   entities:
   - uid: 46
@@ -1337,11 +718,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 25.5,-12.5
-  - uid: 73
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-11.5
   - uid: 74
     components:
     - type: Transform
@@ -1672,41 +1048,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 17.5,11.5
-  - uid: 140
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-10.5
-  - uid: 141
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-9.5
-  - uid: 142
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-8.5
-  - uid: 143
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-7.5
-  - uid: 144
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-6.5
-  - uid: 145
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-5.5
-  - uid: 146
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-4.5
   - uid: 147
     components:
     - type: Transform
@@ -1896,6 +1237,11 @@ entities:
       pos: 15.5891285,-4.3728147
 - proto: Catwalk
   entities:
+  - uid: 73
+    components:
+    - type: Transform
+      parent: 1
+      pos: 1.5,-15.5
   - uid: 174
     components:
     - type: Transform
@@ -2011,11 +1357,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 3.5,2.5
-  - uid: 197
-    components:
-    - type: Transform
-      parent: 1
-      pos: 1.5,-15.5
   - uid: 198
     components:
     - type: Transform
@@ -2079,153 +1420,619 @@ entities:
       parent: 1
       rot: 3.141592653589793 rad
       pos: 3.5562377,-6.3461914
-- proto: ClockworkGrille
+- proto: ChunkEntity
   entities:
-  - uid: 209
+  - uid: 1302
     components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-8.5
-  - uid: 210
+    - type: ChunkEntity
+      root: 1
+      chunk: 0,-1
+    - type: DecalChunk
+      maxDecalId: 170
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: BrickTileDarkCornerNe
+            color: '#FFFFFFFF'
+          decals:
+            72: 11,-4
+            73: 12,-8
+            74: 13,-12
+        - node:
+            id: BrickTileDarkCornerSw
+            color: '#FFFFFFFF'
+          decals:
+            79: 6,-6
+            80: 7,-10
+            81: 8,-14
+        - node:
+            id: BrickTileDarkInnerNe
+            color: '#FFFFFFFF'
+          decals:
+            75: 12,-12
+            76: 11,-8
+            77: 10,-4
+        - node:
+            id: BrickTileDarkInnerSw
+            color: '#FFFFFFFF'
+          decals:
+            145: 9,-14
+            146: 7,-6
+        - node:
+            id: BrickTileDarkLineE
+            color: '#FFFFFFFF'
+          decals:
+            54: 13,-16
+            55: 13,-15
+            56: 13,-14
+            57: 13,-13
+            58: 12,-11
+            59: 12,-10
+            60: 12,-9
+            61: 11,-7
+            62: 11,-6
+            63: 11,-5
+            64: 10,-3
+            65: 10,-2
+            66: 10,-1
+        - node:
+            id: BrickTileDarkLineN
+            color: '#FFFFFFFF'
+          decals:
+            118: 1,-1
+            119: 2,-1
+            120: 3,-1
+            121: 1,-14
+            122: 2,-14
+            123: 3,-14
+            124: 2,-5
+        - node:
+            id: BrickTileDarkLineS
+            color: '#FFFFFFFF'
+          decals:
+            111: 2,-10
+            112: 1,-14
+            113: 2,-14
+            114: 3,-14
+            115: 1,-1
+            116: 2,-1
+            117: 3,-1
+        - node:
+            id: BrickTileDarkLineW
+            color: '#FFFFFFFF'
+          decals:
+            88: 9,-16
+            89: 9,-15
+            90: 8,-13
+            91: 8,-12
+            92: 8,-11
+            93: 7,-9
+            94: 7,-8
+            95: 7,-7
+            96: 6,-5
+            97: 6,-4
+            98: 6,-3
+            99: 6,-2
+            104: 6,-1
+        - node:
+            id: Remains
+            color: '#FFFFFFFF'
+          decals:
+            148: 15.042181,-8.95252
+        - node:
+            id: burnt1
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            164: 13,-5
+            165: 13,-6
+            166: 12,-6
+        - node:
+            id: burnt2
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            159: 3,-11
+        - node:
+            id: burnt3
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            161: 4,-11
+            170: 12,-1
+        - node:
+            id: burnt4
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            160: 4,-12
+  - uid: 1303
     components:
-    - type: Transform
-      parent: 1
-      pos: 15.5,-6.5
-  - uid: 211
+    - type: ChunkEntity
+      root: 1
+    - type: DecalChunk
+      maxDecalId: 265
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: BrickTileDarkCornerNe
+            color: '#FFFFFFFF'
+          decals:
+            78: 10,4
+            204: 1,7
+        - node:
+            id: BrickTileDarkCornerNw
+            color: '#FFFFFFFF'
+          decals:
+            105: 6,4
+            250: 3,7
+        - node:
+            id: BrickTileDarkCornerSe
+            color: '#FFFFFFFF'
+          decals:
+            201: 1,4
+            215: 1,10
+        - node:
+            id: BrickTileDarkCornerSw
+            color: '#FFFFFFFF'
+          decals:
+            251: 3,4
+        - node:
+            id: BrickTileDarkLineE
+            color: '#FFFFFFFF'
+          decals:
+            67: 10,0
+            68: 10,1
+            69: 10,2
+            70: 10,3
+            202: 1,5
+            203: 1,6
+        - node:
+            id: BrickTileDarkLineN
+            color: '#FFFFFFFF'
+          decals:
+            205: 0,7
+            254: 4,7
+            255: 5,7
+            256: 6,7
+            257: 7,7
+            258: 9,7
+            259: 8,7
+            260: 10,7
+            261: 12,7
+            262: 11,7
+            263: 13,7
+            264: 14,7
+            265: 15,7
+        - node:
+            id: BrickTileDarkLineS
+            color: '#FFFFFFFF'
+          decals:
+            107: 0,4
+            139: 14,4
+            140: 15,4
+            217: 14,11
+            218: 15,11
+            220: 5,11
+            221: 6,11
+            222: 7,11
+            223: 8,11
+        - node:
+            id: BrickTileDarkLineW
+            color: '#FFFFFFFF'
+          decals:
+            100: 6,3
+            101: 6,2
+            102: 6,1
+            103: 6,0
+            252: 3,5
+            253: 3,6
+        - node:
+            id: WarnCornerNW
+            color: '#FFFFFFFF'
+          decals:
+            232: 1,10
+        - node:
+            id: WarnCornerSmallNE
+            color: '#FFFFFFFF'
+          decals:
+            247: 3,4
+        - node:
+            id: WarnCornerSmallNW
+            color: '#FFFFFFFF'
+          decals:
+            194: 1,4
+        - node:
+            id: WarnCornerSmallSE
+            color: '#FFFFFFFF'
+          decals:
+            246: 3,7
+        - node:
+            id: WarnCornerSmallSW
+            color: '#FFFFFFFF'
+          decals:
+            193: 1,7
+        - node:
+            id: WarnLineE
+            color: '#FFFFFFFF'
+          decals:
+            244: 3,6
+            245: 3,5
+        - node:
+            id: WarnLineN
+            color: '#FFFFFFFF'
+          decals:
+            190: 0,7
+            233: 4,7
+            234: 5,7
+            235: 6,7
+            236: 7,7
+            237: 8,7
+            238: 10,7
+            239: 11,7
+            240: 12,7
+            241: 14,7
+            242: 15,7
+        - node:
+            id: WarnLineS
+            color: '#FFFFFFFF'
+          decals:
+            191: 1,6
+            192: 1,5
+        - node:
+            id: WarnLineW
+            color: '#FFFFFFFF'
+          decals:
+            20: 14,4
+            21: 15,4
+            27: 0,4
+            224: 5,11
+            225: 6,11
+            226: 7,11
+            227: 8,11
+            228: 14,11
+            229: 15,11
+        - node:
+            id: burnt1
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            167: 0,1
+        - node:
+            id: burnt2
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            168: 5,2
+        - node:
+            id: burnt3
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            169: 12,0
+  - uid: 1304
     components:
-    - type: Transform
-      parent: 1
-      pos: 15.5,-10.5
-  - uid: 212
+    - type: ChunkEntity
+      root: 1
+      chunk: 1,0
+    - type: DecalChunk
+      maxDecalId: 267
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: BrickTileDarkCornerNe
+            color: '#FFFFFFFF'
+          decals:
+            249: 17,7
+        - node:
+            id: BrickTileDarkInnerNe
+            color: '#FFFFFFFF'
+          decals:
+            267: 17,6
+        - node:
+            id: BrickTileDarkLineN
+            color: '#FFFFFFFF'
+          decals:
+            210: 18,6
+            266: 16,7
+        - node:
+            id: BrickTileDarkLineS
+            color: '#FFFFFFFF'
+          decals:
+            141: 16,4
+            144: 19,4
+            207: 17,4
+            208: 18,4
+            219: 16,11
+        - node:
+            id: BrickTileDarkLineW
+            color: '#FFFFFFFF'
+          decals:
+            125: 21,0
+            127: 21,2
+            216: 19,9
+        - node:
+            id: WarnCornerNE
+            color: '#FFFFFFFF'
+          decals:
+            231: 19,9
+        - node:
+            id: WarnCornerSmallNE
+            color: '#FFFFFFFF'
+          decals:
+            199: 18,4
+        - node:
+            id: WarnCornerSmallNW
+            color: '#FFFFFFFF'
+          decals:
+            200: 17,4
+        - node:
+            id: WarnCornerSmallSE
+            color: '#FFFFFFFF'
+          decals:
+            214: 18,7
+        - node:
+            id: WarnCornerSmallSW
+            color: '#FFFFFFFF'
+          decals:
+            213: 17,7
+        - node:
+            id: WarnLineE
+            color: '#FFFFFFFF'
+          decals:
+            19: 21,2
+            198: 18,5
+            211: 18,6
+        - node:
+            id: WarnLineN
+            color: '#FFFFFFFF'
+          decals:
+            243: 16,7
+        - node:
+            id: WarnLineS
+            color: '#FFFFFFFF'
+          decals:
+            196: 17,5
+            248: 17,6
+        - node:
+            id: WarnLineW
+            color: '#FFFFFFFF'
+          decals:
+            22: 16,4
+            25: 19,4
+            230: 16,11
+        - node:
+            id: burnt1
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            171: 16,0
+        - node:
+            id: burnt2
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            172: 17,0
+  - uid: 1305
     components:
-    - type: Transform
-      parent: 1
-      pos: 16.5,-10.5
-  - uid: 213
+    - type: ChunkEntity
+      root: 1
+      chunk: 0,-2
+    - type: DecalChunk
+      maxDecalId: 188
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: BrickTileDarkCornerNe
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            187: 1,-19
+        - node:
+            id: BrickTileDarkCornerSe
+            color: '#FFFFFFFF'
+          decals:
+            51: 13,-19
+        - node:
+            id: BrickTileDarkCornerSe
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            188: 2,-19
+        - node:
+            id: BrickTileDarkCornerSw
+            color: '#FFFFFFFF'
+          decals:
+            83: 9,-19
+        - node:
+            id: BrickTileDarkLineE
+            color: '#FFFFFFFF'
+          decals:
+            52: 13,-18
+            53: 13,-17
+        - node:
+            id: BrickTileDarkLineW
+            color: '#FFFFFFFF'
+          decals:
+            86: 9,-18
+            87: 9,-17
+  - uid: 1306
     components:
-    - type: Transform
-      parent: 1
-      pos: 16.5,-6.5
-  - uid: 214
+    - type: ChunkEntity
+      root: 1
+      chunk: -1,0
+    - type: DecalChunk
+      maxDecalId: 206
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: BrickTileDarkInnerNe
+            color: '#FFFFFFFF'
+          decals:
+            206: -1,7
+        - node:
+            id: BrickTileDarkLineS
+            color: '#FFFFFFFF'
+          decals:
+            106: -1,4
+        - node:
+            id: WarnCornerSW
+            color: '#FFFFFFFF'
+          decals:
+            189: -1,7
+        - node:
+            id: WarnLineS
+            color: '#FFFFFFFF'
+          decals:
+            31: -2,3
+            33: -2,1
+            180: -2,2
+        - node:
+            id: WarnLineW
+            color: '#FFFFFFFF'
+          decals:
+            26: -1,4
+        - node:
+            id: thinline
+            color: '#2B0000FF'
+            angle: 1.5707963267948966 rad
+          decals:
+            185: -2.0038545,2.1601014
+            186: -1.9413545,1.7851014
+  - uid: 1307
     components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-7.5
-  - uid: 215
+    - type: ChunkEntity
+      root: 1
+      chunk: 1,-2
+    - type: DecalChunk
+      maxDecalId: 138
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: BrickTileDarkLineN
+            color: '#FFFFFFFF'
+          decals:
+            138: 19,-19
+        - node:
+            id: BrickTileDarkLineW
+            color: '#FFFFFFFF'
+          decals:
+            136: 21,-17
+        - node:
+            id: WarnLineE
+            color: '#FFFFFFFF'
+          decals:
+            17: 21,-17
+  - uid: 1308
     components:
-    - type: Transform
-      parent: 1
-      pos: 14.5,-7.5
-  - uid: 216
+    - type: ChunkEntity
+      root: 1
+      chunk: 1,-1
+    - type: DecalChunk
+      maxDecalId: 174
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: BrickTileDarkLineW
+            color: '#FFFFFFFF'
+          decals:
+            126: 21,-1
+            128: 21,-3
+            129: 21,-4
+            130: 21,-8
+            131: 21,-9
+            132: 21,-10
+            133: 21,-14
+            134: 21,-15
+            135: 21,-16
+        - node:
+            id: Remains
+            color: '#FFFFFFFF'
+          decals:
+            147: 17.073431,-6.9681454
+            149: 16.042181,-9.968145
+        - node:
+            id: WarnLineE
+            color: '#FFFFFFFF'
+          decals:
+            8: 21,-10
+            9: 21,-9
+            10: 21,-8
+            11: 21,-4
+            12: 21,-3
+            13: 21,-14
+            14: 21,-15
+            18: 21,-16
+        - node:
+            id: burnt4
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            173: 20,-6
+            174: 18,-15
+  - uid: 1309
     components:
-    - type: Transform
-      parent: 1
-      pos: 14.5,-9.5
-  - uid: 217
+    - type: ChunkEntity
+      root: 1
+      chunk: -1,-1
+    - type: DecalChunk
+      maxDecalId: 184
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: WarnLineS
+            color: '#FFFFFFFF'
+          decals:
+            35: -2,-5
+            36: -2,-3
+            38: -2,-6
+            39: -2,-7
+            40: -2,-9
+            41: -2,-8
+            42: -2,-10
+            46: -2,-16
+            177: -2,-11
+            178: -2,-12
+            179: -2,-4
+        - node:
+            id: burnt1
+            color: '#FFFFFFFF'
+            angle: 1.5707963267948966 rad
+          decals:
+            162: -2,-7
+            163: -2,-8
+        - node:
+            id: thinline
+            color: '#2B0000FF'
+            angle: 1.5707963267948966 rad
+          decals:
+            181: -2.0038545,-11.737322
+            182: -1.9726045,-12.002947
+            183: -1.9726045,-3.8935714
+            184: -2.0038545,-4.3154464
+  - uid: 1310
     components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-9.5
-- proto: ClockworkGrilleBroken
-  entities:
-  - uid: 218
-    components:
-    - type: Transform
-      parent: 1
-      pos: 14.5,-6.5
-  - uid: 219
-    components:
-    - type: Transform
-      parent: 1
-      pos: 14.5,-8.5
-  - uid: 220
-    components:
-    - type: Transform
-      parent: 1
-      pos: 14.5,-9.5
-  - uid: 221
-    components:
-    - type: Transform
-      parent: 1
-      pos: 14.5,-10.5
-  - uid: 222
-    components:
-    - type: Transform
-      parent: 1
-      pos: 14.5,-7.5
-  - uid: 223
-    components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-6.5
-  - uid: 224
-    components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-7.5
-  - uid: 225
-    components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-8.5
-  - uid: 226
-    components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-9.5
-  - uid: 227
-    components:
-    - type: Transform
-      parent: 1
-      pos: 18.5,-10.5
-  - uid: 228
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: 14.5,-8.5
-  - uid: 229
-    components:
-    - type: Transform
-      parent: 1
-      pos: 17.5,-6.5
-  - uid: 230
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 17.5,-10.5
-  - uid: 231
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 17.5,-6.5
-  - uid: 232
-    components:
-    - type: Transform
-      parent: 1
-      rot: -1.5707963267948966 rad
-      pos: 17.5,-8.5
-  - uid: 233
-    components:
-    - type: Transform
-      parent: 1
-      rot: 3.141592653589793 rad
-      pos: 1.5,-20.5
-- proto: ClockworkGrilleDiagonal
-  entities:
-  - uid: 234
-    components:
-    - type: Transform
-      parent: 1
-      rot: 1.5707963267948966 rad
-      pos: 15.5,-8.5
-  - uid: 235
-    components:
-    - type: Transform
-      parent: 1
-      pos: 15.5,-8.5
+    - type: ChunkEntity
+      root: 1
+      chunk: -1,-2
+    - type: DecalChunk
+      maxDecalId: 47
+      decals:
+        version: 1
+        nodes:
+        - node:
+            id: WarnLineS
+            color: '#FFFFFFFF'
+          decals:
+            47: -2,-17
 - proto: ClosetMaintenanceFilledRandom
   entities:
   - uid: 236
@@ -2382,6 +2189,10 @@ entities:
       configurators:
       - invalid
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 259
     components:
@@ -2390,6 +2201,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 21.5,-14.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 260
     components:
@@ -2398,6 +2213,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 21.5,-16.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 261
     components:
@@ -2406,6 +2225,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 21.5,-15.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 262
     components:
@@ -2413,6 +2236,10 @@ entities:
       parent: 1
       pos: 19.5,-18.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 263
     components:
@@ -2420,6 +2247,10 @@ entities:
       parent: 1
       pos: 18.5,-18.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 264
     components:
@@ -2427,6 +2258,10 @@ entities:
       parent: 1
       pos: 18.5,-19.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 265
     components:
@@ -2435,6 +2270,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 19.5,-19.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 266
     components:
@@ -2442,6 +2281,10 @@ entities:
       parent: 1
       pos: 18.5,-20.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 267
     components:
@@ -2449,6 +2292,10 @@ entities:
       parent: 1
       pos: 18.5,-21.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 268
     components:
@@ -2457,6 +2304,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 18.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 269
     components:
@@ -2465,6 +2316,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 17.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 270
     components:
@@ -2473,6 +2328,10 @@ entities:
       rot: -3.141592653589793 rad
       pos: 7.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 271
     components:
@@ -2481,6 +2340,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 14.5,-24.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 272
     components:
@@ -2489,6 +2352,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 7.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 273
     components:
@@ -2497,6 +2364,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 7.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 274
     components:
@@ -2505,6 +2376,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 10.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 275
     components:
@@ -2513,6 +2388,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 12.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 276
     components:
@@ -2521,6 +2400,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 10.5,-21.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 277
     components:
@@ -2529,6 +2412,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 278
     components:
@@ -2537,6 +2424,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 15.5,-24.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 279
     components:
@@ -2545,6 +2436,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 7.5,-24.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 280
     components:
@@ -2553,6 +2448,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 13.5,-24.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 281
     components:
@@ -2561,6 +2460,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 282
     components:
@@ -2569,6 +2472,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 283
     components:
@@ -2577,6 +2484,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 284
     components:
@@ -2585,6 +2496,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 11.5,-21.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 285
     components:
@@ -2593,6 +2508,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 16.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 286
     components:
@@ -2601,6 +2520,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 15.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 287
     components:
@@ -2609,6 +2532,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 7.5,-21.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 288
     components:
@@ -2617,6 +2544,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 8.5,-21.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 289
     components:
@@ -2625,6 +2556,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 14.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 290
     components:
@@ -2633,6 +2568,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 13.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 291
     components:
@@ -2640,6 +2579,10 @@ entities:
       parent: 1
       pos: 12.5,-24.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 292
     components:
@@ -2648,6 +2591,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 9.5,-21.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 293
     components:
@@ -2656,6 +2603,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 294
     components:
@@ -2664,6 +2615,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 10.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 295
     components:
@@ -2671,6 +2626,10 @@ entities:
       parent: 1
       pos: 12.5,-21.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 296
     components:
@@ -2678,6 +2637,10 @@ entities:
       parent: 1
       pos: 12.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 297
     components:
@@ -2685,6 +2648,10 @@ entities:
       parent: 1
       pos: 12.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 298
     components:
@@ -2693,6 +2660,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 6.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 299
     components:
@@ -2701,6 +2672,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 5.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 300
     components:
@@ -2709,6 +2684,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 4.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 301
     components:
@@ -2717,6 +2696,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 3.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 302
     components:
@@ -2725,6 +2708,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 2.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 303
     components:
@@ -2733,6 +2720,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 1.5,-23.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 304
     components:
@@ -2741,6 +2732,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,-22.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 305
     components:
@@ -2749,6 +2744,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 10.5,-24.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 306
     components:
@@ -2757,6 +2756,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 18.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 307
     components:
@@ -2765,6 +2768,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 17.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 308
     components:
@@ -2773,6 +2780,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 16.5,-25.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 309
     components:
@@ -2780,6 +2791,10 @@ entities:
       parent: 1
       pos: 6.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 310
     components:
@@ -2787,6 +2802,10 @@ entities:
       parent: 1
       pos: 7.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 311
     components:
@@ -2794,6 +2813,10 @@ entities:
       parent: 1
       pos: 9.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 312
     components:
@@ -2801,6 +2824,10 @@ entities:
       parent: 1
       pos: 10.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 313
     components:
@@ -2808,6 +2835,10 @@ entities:
       parent: 1
       pos: 8.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 314
     components:
@@ -2815,6 +2846,10 @@ entities:
       parent: 1
       pos: 11.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 315
     components:
@@ -2822,6 +2857,10 @@ entities:
       parent: 1
       pos: 12.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 316
     components:
@@ -2829,6 +2868,10 @@ entities:
       parent: 1
       pos: 13.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 317
     components:
@@ -2836,6 +2879,10 @@ entities:
       parent: 1
       pos: 14.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 318
     components:
@@ -2844,6 +2891,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,6.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 319
     components:
@@ -2852,6 +2903,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 320
     components:
@@ -2860,6 +2915,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 18.5,8.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 321
     components:
@@ -2868,6 +2927,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 18.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 322
     components:
@@ -2876,6 +2939,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 17.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 323
     components:
@@ -2884,6 +2951,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 16.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 324
     components:
@@ -2892,6 +2963,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 15.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 325
     components:
@@ -2900,6 +2975,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 14.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 326
     components:
@@ -2908,6 +2987,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 13.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 327
     components:
@@ -2916,6 +2999,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 12.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 328
     components:
@@ -2924,6 +3011,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 11.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 329
     components:
@@ -2932,6 +3023,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 10.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 330
     components:
@@ -2940,6 +3035,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 10.5,10.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 331
     components:
@@ -2948,6 +3047,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 9.5,10.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 332
     components:
@@ -2956,6 +3059,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,10.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 333
     components:
@@ -2964,6 +3071,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 7.5,10.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 334
     components:
@@ -2972,6 +3083,10 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 6.5,10.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 335
     components:
@@ -2980,6 +3095,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,10.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 336
     components:
@@ -2988,6 +3107,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 5.5,11.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 337
     components:
@@ -2996,6 +3119,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,5.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 338
     components:
@@ -3004,6 +3131,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,6.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 339
     components:
@@ -3012,6 +3143,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,7.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 340
     components:
@@ -3020,6 +3155,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 3.5,8.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 341
     components:
@@ -3028,6 +3167,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 3.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 342
     components:
@@ -3036,6 +3179,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 4.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 343
     components:
@@ -3044,6 +3191,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 5.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 344
     components:
@@ -3052,6 +3203,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 6.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 345
     components:
@@ -3060,6 +3215,10 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 7.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
   - uid: 346
     components:
@@ -3068,6 +3227,10 @@ entities:
       rot: 3.141592653589793 rad
       pos: 8.5,9.5
     - type: DeviceLinkSink
+      ports:
+      - Forward
+      - Off
+      - Reverse
       invokeCounter: 1
 - proto: DebugAPCRecharging
   entities:
@@ -3125,6 +3288,293 @@ entities:
     - type: Transform
       parent: 1
       pos: 14.5,3.5
+- proto: EdgeDetector
+  entities:
+  - uid: 3
+    components:
+    - type: Transform
+      parent: 1
+      pos: 25.401264,-0.47255087
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        336:
+        - - OutputHigh
+          - Forward
+        337:
+        - - OutputHigh
+          - Forward
+        338:
+        - - OutputHigh
+          - Forward
+        339:
+        - - OutputHigh
+          - Forward
+        340:
+        - - OutputHigh
+          - Forward
+        341:
+        - - OutputHigh
+          - Forward
+        342:
+        - - OutputHigh
+          - Forward
+        343:
+        - - OutputHigh
+          - Forward
+        335:
+        - - OutputHigh
+          - Forward
+        334:
+        - - OutputHigh
+          - Forward
+        344:
+        - - OutputHigh
+          - Forward
+        345:
+        - - OutputHigh
+          - Forward
+        333:
+        - - OutputHigh
+          - Forward
+        346:
+        - - OutputHigh
+          - Forward
+        332:
+        - - OutputHigh
+          - Forward
+        309:
+        - - OutputHigh
+          - Forward
+        310:
+        - - OutputHigh
+          - Forward
+        313:
+        - - OutputHigh
+          - Forward
+        311:
+        - - OutputHigh
+          - Forward
+        317:
+        - - OutputHigh
+          - Forward
+        316:
+        - - OutputHigh
+          - Forward
+        314:
+        - - OutputHigh
+          - Forward
+        315:
+        - - OutputHigh
+          - Forward
+        312:
+        - - OutputHigh
+          - Forward
+        329:
+        - - OutputHigh
+          - Forward
+        330:
+        - - OutputHigh
+          - Forward
+        331:
+        - - OutputHigh
+          - Forward
+        328:
+        - - OutputHigh
+          - Forward
+        327:
+        - - OutputHigh
+          - Forward
+        326:
+        - - OutputHigh
+          - Forward
+        325:
+        - - OutputHigh
+          - Forward
+        324:
+        - - OutputHigh
+          - Forward
+        323:
+        - - OutputHigh
+          - Forward
+        322:
+        - - OutputHigh
+          - Forward
+        321:
+        - - OutputHigh
+          - Forward
+        320:
+        - - OutputHigh
+          - Forward
+        319:
+        - - OutputHigh
+          - Forward
+        318:
+        - - OutputHigh
+          - Forward
+  - uid: 45
+    components:
+    - type: Transform
+      parent: 1
+      pos: 27.524023,-13.668725
+    - type: DeviceLinkSink
+      invokeCounter: 1
+    - type: DeviceLinkSource
+      linkedPorts:
+        258:
+        - - OutputHigh
+          - Forward
+        259:
+        - - OutputHigh
+          - Forward
+        261:
+        - - OutputHigh
+          - Forward
+        260:
+        - - OutputHigh
+          - Forward
+        262:
+        - - OutputHigh
+          - Forward
+        265:
+        - - OutputHigh
+          - Forward
+        264:
+        - - OutputHigh
+          - Forward
+        266:
+        - - OutputHigh
+          - Forward
+        267:
+        - - OutputHigh
+          - Forward
+        268:
+        - - OutputHigh
+          - Forward
+        269:
+        - - OutputHigh
+          - Forward
+        307:
+        - - OutputHigh
+          - Forward
+        306:
+        - - OutputHigh
+          - Forward
+        308:
+        - - OutputHigh
+          - Forward
+        278:
+        - - OutputHigh
+          - Forward
+        271:
+        - - OutputHigh
+          - Forward
+        280:
+        - - OutputHigh
+          - Forward
+        290:
+        - - OutputHigh
+          - Forward
+        289:
+        - - OutputHigh
+          - Forward
+        286:
+        - - OutputHigh
+          - Forward
+        285:
+        - - OutputHigh
+          - Forward
+        275:
+        - - OutputHigh
+          - Forward
+        283:
+        - - OutputHigh
+          - Forward
+        274:
+        - - OutputHigh
+          - Forward
+        305:
+        - - OutputHigh
+          - Forward
+        294:
+        - - OutputHigh
+          - Forward
+        282:
+        - - OutputHigh
+          - Forward
+        281:
+        - - OutputHigh
+          - Forward
+        270:
+        - - OutputHigh
+          - Forward
+        293:
+        - - OutputHigh
+          - Forward
+        295:
+        - - OutputHigh
+          - Forward
+        296:
+        - - OutputHigh
+          - Forward
+        297:
+        - - OutputHigh
+          - Forward
+        291:
+        - - OutputHigh
+          - Forward
+        304:
+        - - OutputHigh
+          - Forward
+        284:
+        - - OutputHigh
+          - Forward
+        276:
+        - - OutputHigh
+          - Forward
+        292:
+        - - OutputHigh
+          - Forward
+        288:
+        - - OutputHigh
+          - Forward
+        287:
+        - - OutputHigh
+          - Forward
+        273:
+        - - OutputHigh
+          - Forward
+        272:
+        - - OutputHigh
+          - Forward
+        279:
+        - - OutputHigh
+          - Forward
+        303:
+        - - OutputHigh
+          - Forward
+        302:
+        - - OutputHigh
+          - Forward
+        301:
+        - - OutputHigh
+          - Forward
+        300:
+        - - OutputHigh
+          - Forward
+        299:
+        - - OutputHigh
+          - Forward
+        298:
+        - - OutputHigh
+          - Forward
+        263:
+        - - OutputHigh
+          - Forward
+        277:
+        - - OutputHigh
+          - Forward
 - proto: EnergySword
   entities:
   - uid: 356
@@ -5691,6 +6141,51 @@ entities:
       pos: 25.5,-13.5
 - proto: Grille
   entities:
+  - uid: 209
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-8.5
+  - uid: 210
+    components:
+    - type: Transform
+      parent: 1
+      pos: 15.5,-6.5
+  - uid: 211
+    components:
+    - type: Transform
+      parent: 1
+      pos: 15.5,-10.5
+  - uid: 212
+    components:
+    - type: Transform
+      parent: 1
+      pos: 16.5,-10.5
+  - uid: 213
+    components:
+    - type: Transform
+      parent: 1
+      pos: 16.5,-6.5
+  - uid: 214
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-7.5
+  - uid: 215
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-7.5
+  - uid: 216
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-9.5
+  - uid: 217
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-9.5
   - uid: 851
     components:
     - type: Transform
@@ -5721,6 +6216,106 @@ entities:
     - type: Transform
       parent: 1
       pos: 15.5,-18.5
+- proto: GrilleBroken
+  entities:
+  - uid: 218
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-6.5
+  - uid: 219
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-8.5
+  - uid: 220
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-9.5
+  - uid: 221
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-10.5
+  - uid: 222
+    components:
+    - type: Transform
+      parent: 1
+      pos: 14.5,-7.5
+  - uid: 223
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-6.5
+  - uid: 224
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-7.5
+  - uid: 225
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-8.5
+  - uid: 226
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-9.5
+  - uid: 227
+    components:
+    - type: Transform
+      parent: 1
+      pos: 18.5,-10.5
+  - uid: 228
+    components:
+    - type: Transform
+      parent: 1
+      rot: 3.141592653589793 rad
+      pos: 14.5,-8.5
+  - uid: 229
+    components:
+    - type: Transform
+      parent: 1
+      pos: 17.5,-6.5
+  - uid: 230
+    components:
+    - type: Transform
+      parent: 1
+      rot: -1.5707963267948966 rad
+      pos: 17.5,-10.5
+  - uid: 231
+    components:
+    - type: Transform
+      parent: 1
+      rot: -1.5707963267948966 rad
+      pos: 17.5,-6.5
+  - uid: 232
+    components:
+    - type: Transform
+      parent: 1
+      rot: -1.5707963267948966 rad
+      pos: 17.5,-8.5
+  - uid: 233
+    components:
+    - type: Transform
+      parent: 1
+      rot: 3.141592653589793 rad
+      pos: 1.5,-20.5
+- proto: GrilleDiagonal
+  entities:
+  - uid: 234
+    components:
+    - type: Transform
+      parent: 1
+      rot: 1.5707963267948966 rad
+      pos: 15.5,-8.5
+  - uid: 235
+    components:
+    - type: Transform
+      parent: 1
+      pos: 15.5,-8.5
 - proto: MakeshiftShield
   entities:
   - uid: 857
@@ -5737,11 +6332,16 @@ entities:
       pos: 11.5,-7.5
 - proto: MatchSpawnPoint
   entities:
-  - uid: 859
+  - uid: 141
     components:
     - type: Transform
       parent: 1
-      pos: 1.5,-15.5
+      pos: 4.5,-14.5
+  - uid: 142
+    components:
+    - type: Transform
+      parent: 1
+      pos: -0.5,-4.5
   - uid: 860
     components:
     - type: Transform
@@ -5762,16 +6362,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 4.5,-24.5
-  - uid: 864
-    components:
-    - type: Transform
-      parent: 1
-      pos: 5.5,-4.5
-  - uid: 865
-    components:
-    - type: Transform
-      parent: 1
-      pos: 13.5,-23.5
   - uid: 866
     components:
     - type: Transform
@@ -5820,6 +6410,7 @@ entities:
     - type: EntityTableSpawner
       table: !type:NestedSelector
         tableId: NukeOpsAmmoTable
+        conditionsForChildren: []
         weight: 1
         rolls: !type:RangeNumberSelector
           range: 1,1
@@ -5834,6 +6425,7 @@ entities:
     - type: EntityTableSpawner
       table: !type:NestedSelector
         tableId: NukeOpsAmmoTable
+        conditionsForChildren: []
         weight: 1
         rolls: !type:RangeNumberSelector
           range: 1,1
@@ -5850,6 +6442,7 @@ entities:
     - type: EntityTableSpawner
       table: !type:NestedSelector
         tableId: NukeOpsGrenadeTable
+        conditionsForChildren: []
         weight: 1
         rolls: !type:RangeNumberSelector
           range: 1,1
@@ -5864,6 +6457,7 @@ entities:
     - type: EntityTableSpawner
       table: !type:NestedSelector
         tableId: NukeOpsGrenadeTable
+        conditionsForChildren: []
         weight: 1
         rolls: !type:RangeNumberSelector
           range: 1,1
@@ -6369,6 +6963,8 @@ entities:
       parent: 1
       rot: 1.5707963267948966 rad
       pos: 9.5,-23.5
+    missingComponents:
+    - Pullable
   - uid: 965
     components:
     - type: Transform
@@ -6376,6 +6972,8 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 8.5,-21.5
     - type: Conveyed
+    missingComponents:
+    - Pullable
   - uid: 966
     components:
     - type: Transform
@@ -6383,6 +6981,8 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 11.5,-25.5
     - type: Conveyed
+    missingComponents:
+    - Pullable
 - proto: ShardGlass
   entities:
   - uid: 967
@@ -6430,11 +7030,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 6.3870454,-12.415292
-  - uid: 974
-    components:
-    - type: Transform
-      parent: 1
-      pos: 6.4182954,-12.509042
   - uid: 975
     components:
     - type: Transform
@@ -6603,7 +7198,7 @@ entities:
     - type: Transform
       parent: 1
       pos: 25.5,-16.5
-- proto: WallRiveted
+- proto: WallMarble
   entities:
   - uid: 1006
     components:
@@ -6615,11 +7210,6 @@ entities:
     - type: Transform
       parent: 1
       pos: 24.5,-0.5
-  - uid: 1008
-    components:
-    - type: Transform
-      parent: 1
-      pos: 26.5,-4.5
   - uid: 1009
     components:
     - type: Transform
@@ -7643,11 +8233,6 @@ entities:
       pos: 24.5,2.5
     missingComponents:
     - Destructible
-  - uid: 1156
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-3.5
   - uid: 1157
     components:
     - type: Transform
@@ -8458,21 +9043,6 @@ entities:
       pos: 11.5,10.5
     missingComponents:
     - Destructible
-  - uid: 1271
-    components:
-    - type: Transform
-      parent: 1
-      pos: 25.5,-5.5
-  - uid: 1272
-    components:
-    - type: Transform
-      parent: 1
-      pos: 26.5,-5.5
-  - uid: 1273
-    components:
-    - type: Transform
-      parent: 1
-      pos: 26.5,-3.5
 - proto: WallWeaponCapacitorRecharger
   entities:
   - uid: 1274
@@ -8487,6 +9057,22 @@ entities:
       parent: 1
       rot: 3.141592653589793 rad
       pos: 18.5,-5.5
+- proto: WeaponRocketLauncherXenoborg
+  entities:
+  - uid: 140
+    components:
+    - type: MetaData
+      name: broken rocket xenoborg arm
+      desc: A alien rocket launcher fitted with special demolition rockets. Intergral battery seems to be critically damaged, which hinders its storage and self-recharging capabilities.
+    - type: Transform
+      parent: 1
+      rot: 3.141592653589793 rad
+      pos: 10.644567,-10.546081
+    - type: BallisticAmmoProvider
+      unspawnedCount: 2
+      capacity: 2
+    missingComponents:
+    - BallisticAmmoSelfRefiller
 - proto: WeaponShotgunDoubleBarreledRubber
   entities:
   - uid: 1276
@@ -8509,15 +9095,6 @@ entities:
       parent: 1
       rot: -0.8726646259971648 rad
       pos: 16.385319,-4.4254766
-- proto: WeaponTeslaGun
-  entities:
-  - uid: 1279
-    components:
-    - type: Transform
-      parent: 1
-      pos: 10.535,-10.471362
-    - type: BatteryAmmoProvider
-      fireCost: 500
 - proto: WeaponTurretSyndicateBroken
   entities:
   - uid: 1280
