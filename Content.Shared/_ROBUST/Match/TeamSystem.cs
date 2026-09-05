@@ -23,7 +23,7 @@ public sealed class TeamSystem : EntitySystem
         if (args.User != args.Target)
             return;
 
-        var allTeams = ProtoMan.EnumeratePrototypes<TeamPrototype>();
+        var allTeams = ProtoMan.EnumeratePrototypes<TeamPrototype>().OrderBy(x => x.ID).ToList();
 
         byte index = 0;
         foreach (var team in allTeams)
