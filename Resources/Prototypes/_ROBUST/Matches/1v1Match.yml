@@ -130,5 +130,6 @@
       storagebase: !type:AllSelector
         children:
         - id: ClothingOuterHardsuitCarp
+        - id: DrinkWaterBottleFull
         - id: DehydratedSpaceCarp
           amount: 6
