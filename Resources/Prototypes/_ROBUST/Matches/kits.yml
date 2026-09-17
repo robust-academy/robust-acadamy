@@ -85,18 +85,10 @@
         - id: BowImprovised
       - !type:GroupSelector
         children:
-        - id: ArrowImprovisedPlasma
-          amount: !type:RangeNumberSelector
-            range: 7, 10
-        - id: ArrowImprovisedUranium
-          amount: !type:RangeNumberSelector
-            range: 7, 10
-        - id: ArrowRegular
-          amount: !type:RangeNumberSelector
-            range: 7, 10
-        - id: ArrowImprovised
-          amount: !type:RangeNumberSelector
-            range: 7, 10
+        - id: ClothingBeltQuiverFilledImprovised
+        - id: ClothingBeltQuiverFilledRegular
+        - id: ClothingBeltQuiverFilledImprovisedPlasma
+        - id: ClothingBeltQuiverFilledImprovisedUranium
         weight: 1.25
 
     - !type:AllSelector
@@ -143,11 +135,6 @@
       children:
       - id: WeaponSniperHristov
       - id: MagazineBoxAntiMateriel
-
-    - !type:AllSelector
-      children:
-      - id: WeaponSniperMosin
-      - id: MagazineBoxLightRifle
 
     - id: WeaponEnergyShotgun
       weight: 0.6
@@ -202,8 +189,6 @@
           weight: 0.5
         - id: Truncheon
           weight: 1.5
-        - id: ToolboxSyndicate
-          weight: 1.25
       weight: 5.5
 
 - type: entityTable
@@ -273,9 +258,6 @@
 
       - id: ClothingOuterArmorCaptainCarapace
         weight: 0.45
-
-      - id: ClothingBackpackHarmpack
-        weight: 0.6
 
       # sec armor
       - !type:GroupSelector
@@ -367,7 +349,8 @@
           weight: 0.7
         - id: PipeBomb
           weight: 1.25
-#        - id: C4 todo: fix this going on your head
+        - id: C4
+          weight: 0.8
         - id: SingularityGrenade
         rolls: 1, 2
 
