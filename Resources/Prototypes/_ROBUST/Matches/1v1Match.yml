@@ -134,7 +134,6 @@
         - id: DehydratedSpaceCarp
           amount: 6
 
-
 - type: entity
   id: ClothingBeltQuiverFilledRegular
   parent: ClothingBeltQuiver
