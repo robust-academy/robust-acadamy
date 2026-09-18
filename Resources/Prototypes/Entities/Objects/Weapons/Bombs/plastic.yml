@@ -82,13 +82,15 @@
     layers:
     - state: icon
       map: ["base"]
-  - type: Clothing
-    sprite: Objects/Weapons/Bombs/c4.rsi
-    slots:
-    - HEAD
-    quickEquip: false
-    equipDelay: 3
-    unequipDelay: 6
+  # ROBUSTA START
+  #- type: Clothing
+    #sprite: Objects/Weapons/Bombs/c4.rsi
+    #slots:
+    #- HEAD
+    #quickEquip: false
+    #equipDelay: 3
+    #unequipDelay: 6
+  # ROBUSTA END
   - type: HolidayVisuals
     holidays:
       festive:

@@ -133,3 +133,51 @@
         - id: DrinkWaterBottleFull
         - id: DehydratedSpaceCarp
           amount: 6
+
+- type: entity
+  id: ClothingBeltQuiverFilledRegular
+  parent: ClothingBeltQuiver
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ArrowRegular
+          amount: 16
+
+- type: entity
+  id: ClothingBeltQuiverFilledImprovised
+  parent: ClothingBeltQuiver
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ArrowImprovised
+          amount: 16
+
+- type: entity
+  id: ClothingBeltQuiverFilledImprovisedPlasma
+  parent: ClothingBeltQuiver
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ArrowImprovisedPlasma
+          amount: 16
+
+- type: entity
+  id: ClothingBeltQuiverFilledImprovisedUranium
+  parent: ClothingBeltQuiver
+  suffix: Filled
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: ArrowImprovisedUranium
+          amount: 16
