@@ -129,6 +129,9 @@ public sealed partial class NukeSystem : EntitySystem
         }
 
         nuke.Code = GenerateRandomNumberString(nuke.CodeLength);
+
+        UpdateStatus(uid, nuke);
+        UpdateUserInterface(uid, nuke);
     }
 
     /// <summary>

@@ -88,6 +88,7 @@
       whitelist:
         components:
         - NukeDisk
+      startingItem: NukeDisk # robust!!
     alertLevelOnActivate: DeltaNuke
     alertLevelOnDeactivate: Green
   - type: InteractionOutline

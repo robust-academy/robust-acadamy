@@ -91,7 +91,7 @@ public sealed partial class PacifyEveryoneNotInMatchSystem : EntitySystem
 
     public override void Update(float frameTime)
     {
-        return;
+        // return;
         // var matchPlayers = _match.GetPlayers();
 
         List<ICommonSession> matchPlayers = [];

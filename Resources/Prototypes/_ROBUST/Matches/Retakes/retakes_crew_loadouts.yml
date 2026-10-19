@@ -28,3 +28,34 @@
   - UrstRetakesArmoryKit1
   - UrstRetakesArmoryKit2
   - UrstRetakesArmoryKit3
+
+- type: robustRole
+  id: RobustRoleCrewService
+  kits:
+  - RobustKitService1
+  - RobustKitService2
+  - RobustKitService3
+
+- type: robustRole
+  id: RobustRoleCrewSalv
+  kits:
+  - RetakesSalvKit3
+  - RetakesSalvKit2
+  - RetakesSalvKit3
+
+
+- type: entity
+  parent: MobHuman
+  id: ---------------------------------------
+  components:
+  - type: Loadout
+    prototypes:
+    - --------------------------------------
+
+- type: robustKit
+  id: ---------------------------------------
+  name: ---------------------------------------
+  description: ---------------------------------------
+  kit: ---------------------------------------
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #

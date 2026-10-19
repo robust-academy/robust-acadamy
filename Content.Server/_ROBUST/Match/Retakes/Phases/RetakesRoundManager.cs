@@ -45,6 +45,9 @@ public sealed partial class RetakesRoundManager : EntitySystem
             numNukes++;
         }
 
+
+        // todo: yeah this logic is all wrong for actually choosing a winner!
+
         // nukies lost!
         if (numNukes == 0)
             return true;
@@ -69,6 +72,28 @@ public sealed partial class RetakesRoundManager : EntitySystem
         }
 
         if (aliveCrew == 0)
+            return true;
+
+        var aliveNukies = 0;
+        foreach (var player in _match.GetPlayers(match))
+        {
+            if (player.AttachedEntity == null)
+                continue;
+
+            if (HasComp<GhostComponent>(player.AttachedEntity))
+                continue;
+
+            if (_mobState.IsIncapacitated(player.AttachedEntity.Value))
+                continue;
+
+            // sus hard code
+            if ("NukieTeam" != _team.GetTeamOfPlayer(match, player))
+                continue;
+
+            aliveNukies++;
+        }
+
+        if (aliveNukies == 0)
             return true;
 
         return false;

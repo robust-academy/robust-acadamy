@@ -107,7 +107,16 @@ public sealed partial class MatchControllerSystem : EntitySystem
         if (args.MatchProtoId == "RetakeMatch" && players.Count >= 2)
         {
             var p = players.Shuffle().ToList();
-            List<ICommonSession> p2 = [p.Pop(), p.Pop()];
+
+            List<ICommonSession> p2 = [];
+
+            // todo fix - it only works in this weird way
+            for (var i = 0; i < p.Count; i++)
+            {
+                p2.Add(p[i]);
+            }
+
+
 
             _match.StartMatch(proto.MatchEntProtoId, p2, args.MatchSettings);
             return;

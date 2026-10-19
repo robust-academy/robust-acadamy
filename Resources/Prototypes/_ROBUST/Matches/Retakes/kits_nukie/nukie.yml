@@ -1,14 +1,44 @@
+- type: entity
+  parent: BaseUplinkRadio
+  id: BaseUplinkRadio14TC
+  suffix: 14 TC, NukeOps
+  components:
+  - type: Store
+    balance:
+      Telecrystal: 14
+  - type: Tag
+    tags:
+    - NukeOpsUplink
+
+- type: entity
+  parent: ClothingBackpackDuffelSyndicateBundle
+  id: ClothingBackpackDuffelSyndicateFilledStarterKitRobusta
+  name: basic operative bundle
+  description: "Contains a weapon, medical supplies, breaching tools, spare ammo, and some simple utilities."
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        - id: WeaponSubMachineGunC20r
+        - id: MagazinePistolSubMachineGun
+          amount: 3
+        - id: SyndicateJawsOfLife
+        - id: MedkitCombatFilled
+        - id: BaseUplinkRadio14TC
+
 - type: startingGear
   id: RetakesNukieBasic
   equipment:
     jumpsuit: ClothingUniformJumpsuitOperative
-    back: ClothingBackpackDuffelSyndicateFilledStarterKit
+    back: ClothingBackpackDuffelSyndicateFilledStarterKitRobusta
     mask: ClothingMaskGasSyndicate
     gloves: ClothingHandsGlovesCombat
     outerClothing: ClothingOuterHardsuitSyndie
     shoes: ClothingShoesBootsMagSyndie
     id: SyndiPDA
     pocket1: DoubleEmergencyOxygenTankFilled
+    pocket2: WeaponPistolViper
 
 - type: entity
   parent: MobHuman

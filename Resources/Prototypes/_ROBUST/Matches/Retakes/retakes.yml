@@ -37,17 +37,26 @@
           - RobustRoleNukieOperative
           CrewTeam:
           - RobustRoleCrewCommand
-          - RobustRoleCrewCommand
           - RobustRoleCrewSecurity
           - RobustRoleCrewSecurity
-          - RobustRoleCrewSecurity
-          - RobustRoleCrewTider
+          - RobustRoleCrewService
+          - RobustRoleCrewSalv
           - RobustRoleCrewTider
       - !type:Wait
         waitTime: 1s
       - !type:RetakesSpawnPlayers
       - !type:Wait
-        waitTime: 60s
+        waitTime: 2s
+      - !type:Announce
+        announcement: "30 seconds until the walls drop."
+      - !type:Wait
+        waitTime: 15s
+      - !type:Announce
+        announcement: "15 seconds... Get ready!"
+      - !type:Wait
+        waitTime: 15s
+      - !type:Announce
+        announcement: "Walls dropped! Fight!!"
       - !type:RemoveTemporaryWalls
       - !type:Wait
         waitTime: 2s

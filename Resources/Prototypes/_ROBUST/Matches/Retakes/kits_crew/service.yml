@@ -1,0 +1,130 @@
+- type: startingGear
+  id: RetakesServiceGearBotany
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHydroponics
+    back: ClothingBackpackSatchelHydroponics
+    head: ClothingHeadBandBotany
+    mask: ClothingMaskBreath
+    ears: ClothingHeadsetService
+    gloves: ClothingHandsGlovesLeather
+    outerClothing: ClothingOuterWinterHydro
+    shoes: ClothingShoesColorBrown
+    id: BotanistPDA
+    pocket1: EmergencyMedipen
+    pocket2: EmergencyOxygenTankFilled
+    belt: ClothingBeltQuiverFilledAmatoxin
+  storage:
+    back:
+    - ChemistryBottleOmnizine
+    - ChemistryBottleOmnizine
+    - ChemistryBottleOmnizine
+    - ChemistryBottleOmnizine
+    - Syringe
+    - OxygenTankFilled
+    - BaseBallBat
+    - Gauze
+    - AloeCream
+    - Crowbar
+  inhand:
+  - WeaponImprovisedPneumaticCannon
+  - WoodenBuckler
+
+- type: entity
+  parent: MobHuman
+  id: UrstRetakesService1
+  components:
+  - type: Loadout
+    prototypes:
+    - RetakesServiceGearBotany
+
+- type: robustKit
+  id: RobustKitService1
+  name: Service (botany)
+  description: plant...
+  kit: UrstRetakesService1
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
+
+- type: startingGear
+  id: RetakesServiceGearBartender
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBartender
+    back: ClothingBackpackSatchel
+    head: ClothingHeadHatTophat
+    mask: ClothingMaskBreath
+    ears: ClothingHeadsetService
+    outerClothing: ClothingOuterArmorBasicSlim
+    shoes: ClothingShoesColorBlack
+    id: BartenderPDA
+    pocket1: EmergencyMedipen
+    pocket2: EmergencyOxygenTankFilled
+    belt: ClothingBeltBandolier
+  storage:
+    back:
+    - DrinkDoctorsDelightGlass
+    - DrinkDoctorsDelightGlass
+    - BoxBeanbag
+    - BoxBeanbag
+    - BoxLethalshot
+    - Crowbar
+    - Saw
+  inhand:
+  - WeaponShotgunDoubleBarreledRubber
+
+- type: entity
+  parent: MobDwarf
+  id: UrstRetakesService2
+  components:
+  - type: Loadout
+    prototypes:
+    - RetakesServiceGearBartender
+
+- type: robustKit
+  id: RobustKitService2
+  name: Service (bartender)
+  description: drink yum!!
+  kit: UrstRetakesService2
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
+
+- type: startingGear
+  id: RetakesServiceGearClown
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitClown
+    back: ClothingBackpackSatchelClown
+    mask: ClothingMaskClown
+    ears: ClothingHeadsetService
+    gloves: ClothingHandsGlovesColorYellow
+    shoes: ClothingShoesClown
+    id: ClownPDA
+    pocket1: EmergencyMedipen
+    pocket2: EmergencyOxygenTankFilled
+    belt: ClothingBeltUtilityFilledRetakes
+  storage:
+    back:
+    - WeaponPistolMk58
+    - LauncherCreamPie
+    - Stunbaton
+    - FoodPieBananaCream
+    - FoodPieBananaCream
+    - FoodPieBananaCream
+    - FoodPieBananaCream
+  inhand:
+  - FoodPieBananaCream
+  - ToySword
+
+- type: entity
+  parent: MobHuman
+  id: UrstRetakesService3
+  components:
+  - type: Loadout
+    prototypes:
+    - RetakesServiceGearClown
+
+- type: robustKit
+  id: RobustKitService3
+  name: Service (clown)
+  description: honk yonk
+  kit: UrstRetakesService3
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #

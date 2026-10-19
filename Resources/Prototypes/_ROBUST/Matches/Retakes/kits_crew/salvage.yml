@@ -1,0 +1,121 @@
+- type: startingGear
+  id: RetakesSalvGearMG1
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    back: ClothingBackpackSatchelSalvage
+    head: ClothingHeadHelmetSwatSyndicate
+    mask: ClothingMaskGasExplorer
+    ears: ClothingHeadsetCargo
+    outerClothing: ClothingOuterVestWeb
+    shoes: ClothingShoesBootsJump
+    id: SalvagePDA
+    pocket1: EmergencyMedipen
+    pocket2: EmergencyOxygenTankFilled
+    belt: ClothingBeltSalvageWebbing
+  storage:
+    back:
+    - MedicatedSuture
+    - RegenerativeMesh
+    - MagazinePistol
+    - MagazinePistol
+    - MagazinePistol
+    - Crowbar
+    - CyberPen
+    - WeaponPistolViper
+  inhand:
+  - WeaponSubMachineGunWt550
+
+- type: entity
+  parent: MobHuman
+  id: RetakesSalvSpawn1
+  components:
+  - type: Loadout
+    prototypes:
+    - RetakesSalvGearMG1
+
+- type: robustKit
+  id: RetakesSalvKit1
+  name: Salvage kit 1
+  description: Scary!!
+  kit: RetakesSalvSpawn1
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
+
+- type: startingGear
+  id: RetakesSalvGearMG2
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    back: ClothingBackpackSatchelSalvage
+    mask: ClothingMaskGasExplorer
+    ears: ClothingHeadsetCargo
+    outerClothing: ClothingOuterHardsuitSalvage
+    shoes: ClothingShoesBootsJump
+    id: SalvagePDA
+    pocket1: EmergencyMedipen
+    pocket2: EmergencyOxygenTankFilled
+    belt: ClothingBeltSalvageWebbing
+  storage:
+    back:
+    - ClothingMaskGoldenCursed
+    - CigPackSyndicate
+    - FlippoLighter
+    - Crowbar
+  inhand:
+  - WeaponCrusherGlaive
+
+- type: entity
+  parent: MobHuman
+  id: RetakesSalvSpawn2
+  components:
+  - type: Loadout
+    prototypes:
+    - RetakesSalvGearMG2
+
+- type: robustKit
+  id: RetakesSalvKit2
+  name: Salv kit 2
+  description: Carps are scared...
+  kit: RetakesSalvSpawn2
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
+
+- type: startingGear
+  id: RetakesSalvGearVGroid3
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    back: ClothingBackpackSatchelSalvage
+    mask: ClothingMaskGasExplorer
+    ears: ClothingHeadsetCargo
+    outerClothing: ClothingOuterHardsuitGoliath
+    shoes: ClothingShoesBootsMag
+    id: SalvagePDA
+    pocket1: EmergencyMedipen
+    pocket2: EmergencyOxygenTankFilled
+    belt: ClothingBeltSalvageWebbing
+  storage:
+    back:
+    - MedicatedSuture
+    - RegenerativeMesh
+    - WeaponPistolMk58
+    - MagazinePistol
+    - MagazinePistol
+    - MagazinePistol
+    - Crowbar
+  inhand:
+  - WeaponCrusher
+
+- type: entity
+  parent: MobHuman
+  id: RetakesSalvSpawn3
+  components:
+  - type: Loadout
+    prototypes:
+    - RetakesSalvGearVGroid3
+
+- type: robustKit
+  id: RetakesSalvKit3
+  name: Salv kit 3
+  description: power gamer!
+  kit: RetakesSalvSpawn3
+
+# --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- #
